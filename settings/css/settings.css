@@ -1,0 +1,11 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*HEADER CHANGES*/
+.main-user-info span {
+	color: #34C38D;
+}
+
+.main-user-info img {
+	border: 2px solid #34C38D;
+}
