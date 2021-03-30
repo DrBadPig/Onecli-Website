@@ -60,6 +60,48 @@
 	background-color: #4f5a7b;
 }
 
+.user-info-section {
+	width: 100%;
+	height: auto;
+	
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.profile-info {
+	width: 48%;
+	height: 1202px;
+	background-color: #ffffff;
+	
+	position: relative;
+	border-radius: 8px;
+	box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+
+.account-info {
+	width: 48%;
+	height: 1202px;
+	background-color: #ffffff;
+	
+	position: relative;
+	border-radius: 8px;
+	box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+
+.photo-section {
+	width: 100%;
+	height: auto;
+	border-radius: 8px 8px 0px 0px;
+}
+
+.photo-section img {
+	width: 100%;
+	height: auto;
+	border-radius: 8px 8px 0px 0px;
+}
+
 /*MEDIA*/
 
 /*1024 px*/
@@ -71,7 +113,13 @@
 /*TABLET*/
 
 @media screen and (max-width: 768px) {
-	
+	/*	profile info*/
+	.profile-info {
+		width: 100%;
+	}
+	.account-info {
+		width: 100%;
+	}
 }
 
 /*MOBILE*/
