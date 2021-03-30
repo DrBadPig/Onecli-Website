@@ -19,3 +19,8 @@ function onClickSocials() {
 	let socailsList = document.getElementById('socials-list').classList.toggle('hidden');
 	let socailsH1 = document.getElementById('socials-h1').classList.toggle('hidden');
 }
+
+//OPEN / CLOSE USER SUBMENU
+function onClickUserSubmenu() {
+	let user_submenu = document.getElementById('user_submenu').classList.toggle('hidden');
+}

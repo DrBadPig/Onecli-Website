@@ -23,7 +23,7 @@
 		<!--HEADER RIGHT SIDE-->
 		<div class="header-user-info div-flex df-spaceb">
 			<!--USER INFO-->
-			<div class="main-user-info">
+			<div class="main-user-info" onClick="onClickUserSubmenu()">
 				<span class="user-header-login t-black">User Login</span>
 				<img class="user-header-image" src="../images/bvadimnikol.jpg" alt="Your image">
 			</div>
@@ -54,8 +54,13 @@
 	</header>
 	
 	<!--USER SETTING SUBMENU-->
-	<div class="user-submenu">
-		
+	<div class="user-submenu hidden"  id="user_submenu">
+		<ul>
+			<li><a href="index.html">Аккант</a></li>
+			<li><a href="index.html">Настройки</a></li>
+			<li><a href="#">На главную</a></li>
+			<li><a href="#">Выход</a></li>
+		</ul>
 	</div>
 	
 	<!--NAVIGATION FULL-->
