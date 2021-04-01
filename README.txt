@@ -1,6 +1,7 @@
 Z-INDEX
 
 header - 1030
+language-chooser - 200
 modals-notify - 120
 navigation - 110
 modals - 100

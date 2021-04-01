@@ -24,3 +24,8 @@ function onClickSocials() {
 function onClickUserSubmenu() {
 	let user_submenu = document.getElementById('user_submenu').classList.toggle('hidden');
 }
+
+// OPEN / CLOSE LANGUAGE CHOOSER MENU
+function onClickLanguageChooserMenu() {
+	let lang_chooser = document.getElementById('language-chooser-menu').classList.toggle('hidden');
+}

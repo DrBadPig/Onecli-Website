@@ -168,6 +168,59 @@ input[type=text] {
 	width: 30px;
 }
 
+.language-chooser-menu {
+	position: fixed;
+	top: 69px;
+	right: 40px;
+	z-index: 200;
+	border-radius: 0px 0px 16px 16px;
+	
+	height: 207px;
+	overflow: auto;
+	
+	box-shadow: -5px 7px 14px rgba(0,0,0,0.1);
+}
+
+.language-chooser-menu::-webkit-scrollbar-track {
+	background-color: #ffffff;
+	width: 3px;
+}
+
+.language-chooser-menu::-webkit-scrollbar-thumb {
+    background: #34C38D;
+	border-radius: 8px;
+	width: 3px;
+}
+
+.language-chooser-menu div {
+	width: 69px;
+	height: 69px;
+	background-color: #ffffff;
+	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+	cursor: pointer;
+}
+
+.language-chooser-menu div:hover {
+	background-color: #f3f3f3;
+}
+
+.language-chooser-menu div img {
+	width: 30px;
+	height: 30px;
+	margin: 0px 0px 0px 5px;
+}
+
+.language-chooser-menu div .active {
+	border: 1px solid #34C38D;
+	border-radius: 30px;
+	width: 28px;
+	height: 28px;
+}
+
 /*NAVIGATION MENU (< 1025px)*/
 
 .main-header-menu {
