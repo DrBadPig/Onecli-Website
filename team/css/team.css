@@ -1,0 +1,443 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*AFFILIATE LINK*/
+.affiliate-link {
+	width: 100%;
+	height: 60px;
+	background-color: #ffffff;
+	
+	text-align: center;
+	
+	border-radius: 8px;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+	
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.affiliate-link .btn {
+	height: 60px;
+	padding: 18px 20px;
+}
+
+.affiliate-link div {
+	display: none;
+	width: 50px;
+	height: 100%;
+	background-color: #34C38D;
+	cursor: pointer;
+}
+
+.affiliate-link div:hover {
+	background-color: #c1eddc;
+}
+
+.affiliate-link span {
+	color: #afaeb3;
+	text-decoration: underline;
+}
+
+.affiliate-link p {
+	color: #afaeb3;
+}
+
+.affiliate-link img {
+	margin: 0px 15px 0px 10px;
+}
+
+/*PERSONAL LANDING PAGE*/
+
+.personal-landing {
+	width: 100%;
+	height: 103px;
+	background-color: #ffffff;
+	
+	border-radius: 8px;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+	
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.personal-landing-link {
+	margin: 0px 0px 0px 20px;
+	height: 55px;
+	display: flex;
+	align-items: flex-start;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.personal-landing-link h2 {
+	margin: 0px;
+}
+
+.personal-landing-link .link {
+	border-bottom: 1px solid #d4dbf2;
+	width: 300px;
+}
+
+.personal-landing-link .link div {
+	width: 30px;
+	height: 30px;
+	background-color: #98e0c5;
+	cursor: pointer;
+}
+
+.personal-landing-link .link div:hover {
+	width: 30px;
+	height: 30px;
+	background-color: #c1eddc;
+}
+
+.personal-landing-link a {
+	color: #909298;
+}
+
+.landing-email-section div {
+	width: 160px;
+	margin: 0px 20px 0px 5px;
+	height: 63px;
+	background-color: #ffffff;
+	border-radius: 8px;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+	cursor: pointer;
+	
+	background: url(../images/decor-bg/line.svg) 100% no-repeat, url(../images/decor-bg/line.svg) 100% no-repeat;
+	background-position: top, bottom;
+	background-size: 80%;
+}
+
+.landing-email-section div:hover {
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.35);
+}
+
+.landing-email-short-section {
+	display: none;
+	width: 40%;
+	margin: 0px 20px 0px 10px;
+	height: 65px;
+	text-align: center;
+	font-size: 14px;
+	background-color: #ffffff;
+	border-radius: 8px;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+	cursor: pointer;
+}
+
+.landing-email-short-section:hover {
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+}
+
+/*AFFILIATE INFO*/
+
+.affiliate-info {
+	width: 100%;
+	height: 688px;
+	background-color: #ffffff;
+	
+	border-radius: 8px;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+	
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.affiliate-info .personal-info {
+	width: 100%;
+	height: 50px;
+	background-color: #70d4af;
+	border-radius: 8px 8px 0px 0px;
+}
+
+.affiliate-info .personal-info > span:first-child {
+	margin: 0px 0px 0px 40px;
+}
+
+.affiliate-info .personal-info > span:last-child {
+	margin: 0px 40px 0px 0px;
+}
+
+.affiliate-header {
+	width: 100%;
+	height: 50px;
+}
+
+.affiliate-header span {
+	margin: 0px 30px;
+}
+
+.affiliate-header span:nth-child(2) {
+	margin: 0px 40% 0px 5%;
+}
+
+.affiliate-table {
+	width: 100%;
+	height: 588px;
+	text-align: center;
+	font-size: 12px;
+	border-spacing: 0px 5px;
+	font-weight: 300;
+}
+
+.affiliate-table tr {
+	background-color: #fbfbfb;
+}
+
+.affiliate-table tr:first-child {
+	background-color: #8b99c2;
+}
+
+.affiliate-table th {
+	font-weight: 400;
+	color: #ffffff;
+}
+
+.affiliate-table tr th:nth-child(6) {
+	display: none;
+}
+.affiliate-table tr td:nth-child(6) {
+	display: none;
+}
+.affiliate-table tr svg {
+	cursor: pointer;
+}
+.affiliate-table tr td:nth-child(6) svg:hover g g path {
+	fill: #000000;
+}
+
+/*TEAM TABLE*/
+
+.team-table-wrapper {
+	width: 100%;
+	border-radius: 8px;
+	background-color: #ffffff;
+	margin: 20px 0px 0px 0px;
+	box-shadow: 0px 0px 14px rgba(0,0,0,0.1);
+	
+	position: relative;
+	bottom: 0px;
+}
+
+.team-table {
+	width: 94%;
+	border-spacing: 20px 12px;
+	height: 480px;
+	margin: 0px 3%;
+	
+	text-align: left;
+}
+
+.team-table th {
+	padding: 0px 0px;
+	color: #34c38d;
+	font-size: 14px;
+	font-weight: 400;
+}
+
+.team-table td {
+	vertical-align: middle;
+	font-size: 14px;
+}
+
+.team-table td:first-child {
+	width: 40px;
+}
+
+.team-table tr {
+	box-shadow: 0px 0px 10px rgba(0,0,0,0.15);
+	border-radius: 8px;
+}
+
+.team-table tr:hover {
+	box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+}
+
+.team-table tr:first-child {
+	box-shadow: none;
+}
+
+.team-table tr:first-child:hover {
+	box-shadow: none;
+}
+
+.team-member-image {
+	position: relative;
+	width: 40px;
+	height: 40px;
+	border-radius: 30px;
+	border: 1px solid #34c38d;
+}
+
+/*TABLE PAGER*/
+
+.team-table-pager {
+	width: auto;
+	height: 80px;
+	margin: 0px 33%;
+	font-size: 14px;
+}
+
+.svg-pager {
+	opacity: 0.5;
+	cursor: pointer;
+}
+
+.svg-pager:hover {
+	opacity: 1;
+}
+
+.current-page {
+	color: #34c38d;
+	margin-right: 5px;
+}
+
+.total-pages {
+	margin-left: 5px;
+}
+
+/*MEDIA*/
+
+/*MEDIA > 1366*/
+
+@media screen and (min-width: 1366px) {
+	.affiliate-link, .personal-landing, .affiliate-info {
+		width: 1027px;
+		margin: 0px auto;
+	}
+}
+
+/*MEDIA 1025*/
+
+@media screen and (min-width: 1025px) {
+	
+}
+
+/*MEDIA 1024px*/
+
+@media screen and (max-width: 1024px)  {
+	
+}
+
+/*MEDIA TABLET*/
+
+@media screen and (max-width: 768px)  {
+/*	affilate link*/
+	.affiliate-link {
+		height: 50px;
+	}
+	.affiliate-link span {
+		height: 100%;
+		width: 86%;
+		text-align: left;
+		color: #4b5158;
+		font-size: 14px;
+		text-decoration: none;
+		padding: 0px 0px 0px 10px;
+		background-color: #EAF9F3;
+		border-radius: 8px 0px 0px 8px;
+		
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+	}
+	.affiliate-link p {
+		display: none;
+	}
+	.affiliate-link .btn {
+		display: none;
+	}
+	.affiliate-link div {
+		display: flex;
+	}
+	.affiliate-link img {
+		margin: 0px 10px 0px 10px;
+	}
+/*	landing section*/
+	.landing-email-section {
+		display: none;
+	}
+	.landing-email-short-section {
+		display: flex;
+	}
+/*	affiliate table*/
+	.affiliate-header span {
+		margin: 0px 10px;
+	}
+	.affiliate-header span:nth-child(2) {
+		margin: 0px 30% 0px 0%;
+	}
+}
+
+/*MEDIA MOBILE*/
+
+@media screen and (max-width: 480px)  {
+/*	affiliate link*/
+	.affiliate-link {
+		height: 38px;
+	}
+	.affiliate-link div svg {
+		width: 20px;
+	}
+	.affiliate-link span {
+		font-size: 11px;
+	}
+/*	landing page*/
+	.personal-landing {
+		height: 141px;
+		align-items: flex-start;
+		flex-direction: column;
+	}
+	.personal-landing h2 {
+		font-size: 14px;
+	}
+	.personal-landing-link {
+		margin: 10px 20px;
+		width: calc(100% - 40px);
+	}
+	.personal-landing-link .link {
+		width: 100%;
+		font-size: 12px;
+	}
+	.landing-email-short-section {
+		height: 50px;
+		margin: 0px 20px 15px;
+		width: calc(100% - 40px);
+	}
+/*	affiliate table*/
+	.affiliate-info .personal-info span {
+		font-size: 10px;
+	}
+	.affiliate-info .personal-info span:first-child, .affiliate-info .personal-info span:last-child {
+		margin: 0px;
+	}
+	.affiliate-header span {
+		font-size: 10px;
+	}
+	.affiliate-header span:nth-child(2) {
+		margin: 0px 15% 0px 0%;
+	}
+	.affiliate-header span:nth-child(3) {
+		margin: 0px 10px 0px -40px;
+	}
+	.affiliate-table tr th:nth-child(5) {
+		display: none;
+	}
+	.affiliate-table tr td:nth-child(5) {
+		display: none;
+	}
+	.affiliate-table tr th:nth-child(6) {
+		display: table-cell;
+	}
+	.affiliate-table tr td:nth-child(6) {
+		display: table-cell;
+	}
+	.affiliate-table {
+		font-size: 10px;
+	}
+}

@@ -1,10 +1,12 @@
 <!doctype html>
 <html lang="ru">
 <head>
-<meta charset="utf-8">
-<title>Моя команда</title>
-	<link href="main.css" rel="stylesheet">
-	<link href="images/logo.png" rel="icon">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Моя команда</title>
+	<link href="../css/main.css" rel="stylesheet">
+	<link href="css/team.css" rel="stylesheet">
+	<link href="../images/logo.png" rel="icon">
 	<link href="https://fonts.gstatic.com" rel="preconnect">
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
 </head>
@@ -12,87 +14,342 @@
 <body>
 	<!--HEADER-->
 	<header class="main-header">
+		<!--LOGO CONTAINER-->
 		<div class="main-logo-div">
-			<span class="main-logo">ONECLI.</span>
+			<img class="main-logo" src="../images/logo.png" alt="ONECLI. logo">
+			<img class="main-logo-title" src="../images/logo_title.png" alt="ONECLI. logo">
 		</div>
-		<div class="header-user-info">
-			<a href="#">
+		<!--HEADER RIGHT SIDE-->
+		<div class="header-user-info div-flex df-spaceb">
+			<!--USER INFO-->
+			<div class="main-user-info" onClick="onClickUserSubmenu()">
 				<span class="user-header-login t-black">User Login</span>
-				<img class="user-header-image" src="images/bvadimnikol.jpg" alt="Your image">
-			</a>
+				<img class="user-header-image" src="../images/bvadimnikol.jpg" alt="Your image">
+			</div>
+			<!--LANGUAGE CHOOSER-->
+			<div class="language-chooser div-flex df-center" onClick="onClickLanguageChooserMenu()">
+				<img src="../images/country-flags/russia.png" alt="russian">
+			</div>
+			<!--NAVIGATION MENU-->
+			<div id="main-header-menu" class="main-header-menu div-flex df-center" onClick="OpenNavMenu()">
+				<!--CLOSED MENU ICON-->
+				<svg class="menu-icon" id="main-menu-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 19">
+  					<g transform="translate(0 1)">
+ 	   					<line x2="25" fill="none" stroke="#fff" stroke-width="2"/>
+  	 					<line x2="16.349" transform="translate(0 9.067)" fill="none" stroke="#fff" stroke-width="2"/>
+  	  					<line x2="25" transform="translate(0 17)" fill="none" stroke="#fff" stroke-width="2"/>
+  					</g>
+				</svg>
+				<!--OPENED MENU ICON-->
+				<svg class="menu-icon hidden" id="main-menu-svg-active" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25.349 19">
+  					<g transform="translate(0 1)">
+    					<line x2="25" fill="none" stroke="#fff" stroke-width="2"/>
+    					<line x2="16.349" transform="translate(9 9.067)" fill="none" stroke="#fff" stroke-width="2"/>
+    					<line x2="25" transform="translate(0 17)" fill="none" stroke="#fff" stroke-width="2"/>
+  					</g>
+				</svg>
+			</div>
 		</div>
 	</header>
-	<!--NAVIGATION FULL-->
-	<nav class="main-navigation" id="fullNav">
-		<div class="main-navigation-wrapper">
-			<div class="nav-header div-flex-two">
-				<span class="t-white">Навигация</span>
-				<img src="images/menu.png" alt="Menu" onClick="onClickNavigation()">
-			</div>
-			<ul class="menu-list">
-				<li><a href="#"><img src="images/menu-icons/inv.png" alt="Invest">Инвестиции в ONECLI.</a></li>
-				<li class="menu-active"><a href="#"><img src="images/menu-icons/team.png" alt="Invest">Моя команда</a></li>
-				<li><a href="#"><img src="images/menu-icons/br.png" alt="Invest">Биржа долей</a></li>
-				<li><a href="#"><img src="images/menu-icons/lots.png" alt="Invest">Лоты<span class="t-notify">&nbsp;[Beta]</span></a></li>
-				<li><a href="#"><img src="images/menu-icons/idea.png" alt="Invest">Идея ONECLI.</a></li>
-				<li><a href="#"><img src="images/menu-icons/btn.png" alt="Invest">Bounty кампания</a></li>
-				<li><a href="#"><img src="images/menu-icons/promo.png" alt="Invest">Промоматериалы</a></li>
-				<li><a href="#"><img src="images/menu-icons/faq.png" alt="Invest">FAQ | Вопрос - ответ</a></li>
-			</ul>
-			<div class="socials">
-				<ul class="socials-list hidden" id="socials-list">
-					<li><a href="#"><img src="images/socials/yt0.png" alt="YT"></a></li>
-					<li><a href="#"><img src="images/socials/f0.png" alt="FB"></a></li>
-					<li><a href="#"><img src="images/socials/i0.png" alt="IN"></a></li>
-					<li><a href="#"><img src="images/socials/tw0.png" alt="TW"></a></li>
-					<li><a href="#"><img src="images/socials/t0.png" alt="TG"></a></li>
-					<li><a href="#"><img src="images/socials/vk0.png" alt="VK"></a></li>
-				</ul>
-				<span class="t-gray t-small" id="socials-h1" onClick="onClickSocials()">СОЦИАЛЬНЫЕ СЕТИ</span>
-				<img src="images/str_left.png" alt="socials" onClick="onClickSocials()">
-			</div>
-			<a href="#">
-				<div class="crypto-rate div-flex-two">
-					<span class="t-white">Курсы криптовалют</span>
-					<img src="images/bitcoin.png" alt="crypt">
-				</div>
-			</a>
-		</div>
-	</nav>
-	<!--NAVIGATION SMALL-->
-	<nav class="sm-nav" id="smallNav">
-		<div class="main-navigation-wrapper">
-			<div class="nav-header div-flex">
-				<img src="images/menu.png" alt="Menu" onClick="onClickNavigation()">
-			</div>
-			<ul class="menu-list">
-				<li><a href="#"><img src="images/menu-icons/inv.png" alt="Invest"></a></li>
-				<li class="menu-active"><a href="#"><img src="images/menu-icons/team.png" alt="Invest"></a></li>
-				<li><a href="#"><img src="images/menu-icons/br.png" alt="Invest"></a></li>
-				<li><a href="#"><img src="images/menu-icons/lots.png" alt="Invest"></a></li>
-				<li><a href="#"><img src="images/menu-icons/idea.png" alt="Invest"></a></li>
-				<li><a href="#"><img src="images/menu-icons/btn.png" alt="Invest"></a></li>
-				<li><a href="#"><img src="images/menu-icons/promo.png" alt="Invest"></a></li>
-				<li><a href="#"><img src="images/menu-icons/faq.png" alt="Invest"></a></li>
-			</ul>
-			<a href="#">
-				<div class="crypto-rate div-flex-two">
-					<img src="images/bitcoin.png" alt="crypt">
-				</div>
-			</a>
-		</div>
-	</nav>
+	
+	<!--USER SETTING SUBMENU-->
+	<div class="user-submenu hidden" id="user_submenu">
+		<ul>
+			<li><a href="../settings/index.html">Аккант</a></li>
+			<li><a href="../settings/index.html">Настройки</a></li>
+			<li><a href="#">На главную</a></li>
+			<li><a href="#">Выход</a></li>
+		</ul>
+	</div>
+	
+	<!--LANGUAGE CHOOSER MENU-->
+	<div class="language-chooser-menu hidden" id="language-chooser-menu">
+		<div><img class="active" src="../images/country-flags/russia.png" alt="russian"></div>
+		<div><img src="../images/country-flags/united-kingdom.png" alt="uk english"></div>
+	</div>
+	
+		
+	
 	<!--MAIN CONTENT-->
 	<main class="main-content">
-		<h1 class="t-main hidden">Onecli. - Моя команда</h1>
-		<div class="div-affiliate-link div-flex df-spaceb">
-			<div>
-				<button class="btn">Копировать вашу партнёрскую ссылку</button>
-				<span class="affiliate-link t-small">ratix.com/ref?nickname</span>
+		<h1 class="t-main hidden">Моя команда Onecli.</h1>
+		
+		<!--AFFILIATE BLOCK-->
+		<div class="affiliate-link container">
+			<button class="btn">Копировать вашу партнёрскую ссылку</button>
+			<span class="t-size-12">ratix.com/ref?nickname</span>
+			<div class="div-flex df-center">
+				<svg xmlns="http://www.w3.org/2000/svg" width="23.7" height="25.442" viewBox="0 0 23.7 25.442">
+  					<path d="M19.463,1H4.495A2.416,2.416,0,0,0,2,3.313V19.5H4.495V3.313H19.463Zm3.742,4.626H9.484A2.416,2.416,0,0,0,6.99,7.939V24.129a2.416,2.416,0,0,0,2.495,2.313H23.205A2.416,2.416,0,0,0,25.7,24.129V7.939A2.416,2.416,0,0,0,23.205,5.626Zm0,18.5H9.484V7.939H23.205Z" transform="translate(-2 -1)" fill="#fff"/>
+				</svg>
 			</div>
-			<span class="t-small affiliaet-help">Используйте свою партнерскую ссылку, чтобы набрать новых участников</span>
-			<a href="#"><img src="images/info.png" alt="info"></a>
+			<p class="t-size-12">Используйте свою партнерскую ссылку, чтобы набрать новых участников</p>
+			<img src="images/info.png" alt="info">
 		</div>
+		
+		<!--PERSONAL LANDING PAGE-->
+		<div class="personal-landing container">
+			<div class="personal-landing-link">
+				<h2 class="t-bold-400 t-size-16 t-main t-uppercase">Ссылка на ваш личный лендинг:</h2>
+				<div class="div-flex-two link">
+					<a href="https://onecli.com/lp?id=onecli">https://onecli.com/lp?id=onecli</a>
+					<div class="div-flex df-center">
+						<svg xmlns="http://www.w3.org/2000/svg" width="18" viewBox="0 0 23.7 25.442">
+  							<path d="M19.463,1H4.495A2.416,2.416,0,0,0,2,3.313V19.5H4.495V3.313H19.463Zm3.742,4.626H9.484A2.416,2.416,0,0,0,6.99,7.939V24.129a2.416,2.416,0,0,0,2.495,2.313H23.205A2.416,2.416,0,0,0,25.7,24.129V7.939A2.416,2.416,0,0,0,23.205,5.626Zm0,18.5H9.484V7.939H23.205Z" transform="translate(-2 -1)" fill="#fff"/>
+						</svg>
+					</div>
+				</div>
+			</div>
+			<div class="landing-email-section div-flex-two">
+				<div class="div-flex df-center">
+					<span>Рассылка</span>
+				</div>
+				<div class="div-flex df-center">
+					<span>Входящие</span>
+				</div>
+			</div>
+			<div class="landing-email-short-section div-flex df-center">
+				<span class="t-main">Создать рассылку по команде</span>
+			</div>
+		</div>
+		
+		<!--AFFILATE INFO-->
+		<div class="affiliate-info container">
+			<div class="personal-info div-flex df-spacea">
+				<span class="t-size-14 t-white">Ваш уровень: <span>0</span> lvl</span>
+				<span class="t-size-14 t-white">Наличие долей: <span>0</span></span>
+				<span class="t-size-14 t-white">Оборот 1 lvl: <span>0</span></span>
+				<span class="t-size-14 t-white">Общ. оборот: <span>0</span></span>
+			</div>
+			<div class="affiliate-header div-flex-two">
+				<span class="t-main t-uppercase t-size-14">Уровень</span>
+				<span class="t-main t-uppercase t-size-14">Условия</span>
+				<span class="t-main t-uppercase t-size-14">Вознаграждения</span>
+			</div>
+			<table class="affiliate-table">
+				<tr>
+					<th></th>
+					<th>Наличие долей</th>
+					<th>Оборот 1 lvl</th>
+					<th>Общ. оборот</th>
+					<th>Реферальная программа</th>
+					<th>Реф. программа</th>
+					<th>Подарок</th>
+  				</tr>
+				<tr>
+					<td>1 Lvl</td>
+					<td>1k</td>
+					<td>1.5k</td>
+					<td>15k</td>
+					<td>5%|3%|2%</td>
+					<td>
+						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+							<g>
+								<path d="M0,0H24V24H0Z" fill="none"/>
+							</g>
+							<g>
+								<g>
+									<path d="M12,6.5A9.77,9.77,0,0,1,20.82,12,9.822,9.822,0,0,1,3.18,12,9.77,9.77,0,0,1,12,6.5m0-2A11.827,11.827,0,0,0,1,12a11.817,11.817,0,0,0,22,0A11.827,11.827,0,0,0,12,4.5Z" fill="#34c28d"/>
+									<path d="M12,9.5A2.5,2.5,0,1,1,9.5,12,2.5,2.5,0,0,1,12,9.5m0-2A4.5,4.5,0,1,0,16.5,12,4.507,4.507,0,0,0,12,7.5Z" fill="#34c28d"/>
+								</g>
+							</g>
+						</svg>
+					</td>
+					<td>150 долей</td>
+				</tr>
+				<tr>
+					<td>2 Lvl</td>
+					<td>2.5k</td>
+					<td>2.5k</td>
+					<td>25k</td>
+					<td>5%|3%|2%</td>
+					<td>
+						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+							<g>
+								<path d="M0,0H24V24H0Z" fill="none"/>
+							</g>
+							<g>
+								<g>
+									<path d="M12,6.5A9.77,9.77,0,0,1,20.82,12,9.822,9.822,0,0,1,3.18,12,9.77,9.77,0,0,1,12,6.5m0-2A11.827,11.827,0,0,0,1,12a11.817,11.817,0,0,0,22,0A11.827,11.827,0,0,0,12,4.5Z" fill="#34c28d"/>
+									<path d="M12,9.5A2.5,2.5,0,1,1,9.5,12,2.5,2.5,0,0,1,12,9.5m0-2A4.5,4.5,0,1,0,16.5,12,4.507,4.507,0,0,0,12,7.5Z" fill="#34c28d"/>
+								</g>
+							</g>
+						</svg>
+					</td>
+					<td>250 долей</td>
+				</tr>
+				<tr>
+					<td>3 Lvl</td>
+					<td>5k</td>
+					<td>5k</td>
+					<td>50k</td>
+					<td>5%|3%|2%</td>
+					<td>
+						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+							<g>
+								<path d="M0,0H24V24H0Z" fill="none"/>
+							</g>
+							<g>
+								<g>
+									<path d="M12,6.5A9.77,9.77,0,0,1,20.82,12,9.822,9.822,0,0,1,3.18,12,9.77,9.77,0,0,1,12,6.5m0-2A11.827,11.827,0,0,0,1,12a11.817,11.817,0,0,0,22,0A11.827,11.827,0,0,0,12,4.5Z" fill="#34c28d"/>
+									<path d="M12,9.5A2.5,2.5,0,1,1,9.5,12,2.5,2.5,0,0,1,12,9.5m0-2A4.5,4.5,0,1,0,16.5,12,4.507,4.507,0,0,0,12,7.5Z" fill="#34c28d"/>
+								</g>
+							</g>
+						</svg>
+					</td>
+					<td>500 долей</td>
+				</tr>
+				<tr>
+					<td>4 Lvl</td>
+					<td>10k</td>
+					<td>10k</td>
+					<td>100k</td>
+					<td>5%|3%|2%|1%</td>
+					<td>
+						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+							<g>
+								<path d="M0,0H24V24H0Z" fill="none"/>
+							</g>
+							<g>
+								<g>
+									<path d="M12,6.5A9.77,9.77,0,0,1,20.82,12,9.822,9.822,0,0,1,3.18,12,9.77,9.77,0,0,1,12,6.5m0-2A11.827,11.827,0,0,0,1,12a11.817,11.817,0,0,0,22,0A11.827,11.827,0,0,0,12,4.5Z" fill="#34c28d"/>
+									<path d="M12,9.5A2.5,2.5,0,1,1,9.5,12,2.5,2.5,0,0,1,12,9.5m0-2A4.5,4.5,0,1,0,16.5,12,4.507,4.507,0,0,0,12,7.5Z" fill="#34c28d"/>
+								</g>
+							</g>
+						</svg>
+					</td>
+					<td>1k долей</td>
+				</tr>
+				<tr>
+					<td>5 Lvl</td>
+					<td>15k</td>
+					<td>15k</td>
+					<td>150k</td>
+					<td >5%|3%|2%|1%|1%</td>
+					<td>
+						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+							<g>
+								<path d="M0,0H24V24H0Z" fill="none"/>
+							</g>
+							<g>
+								<g>
+									<path d="M12,6.5A9.77,9.77,0,0,1,20.82,12,9.822,9.822,0,0,1,3.18,12,9.77,9.77,0,0,1,12,6.5m0-2A11.827,11.827,0,0,0,1,12a11.817,11.817,0,0,0,22,0A11.827,11.827,0,0,0,12,4.5Z" fill="#34c28d"/>
+									<path d="M12,9.5A2.5,2.5,0,1,1,9.5,12,2.5,2.5,0,0,1,12,9.5m0-2A4.5,4.5,0,1,0,16.5,12,4.507,4.507,0,0,0,12,7.5Z" fill="#34c28d"/>
+								</g>
+							</g>
+						</svg>
+					</td>
+					<td>1.5k долей</td>
+				</tr>
+				<tr>
+					<td>6 Lvl</td>
+					<td>30k</td>
+					<td>30k</td>
+					<td>250k</td>
+					<td>5%|3%|2%|1%|1%|1%</td>
+					<td>
+						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+							<g>
+								<path d="M0,0H24V24H0Z" fill="none"/>
+							</g>
+							<g>
+								<g>
+									<path d="M12,6.5A9.77,9.77,0,0,1,20.82,12,9.822,9.822,0,0,1,3.18,12,9.77,9.77,0,0,1,12,6.5m0-2A11.827,11.827,0,0,0,1,12a11.817,11.817,0,0,0,22,0A11.827,11.827,0,0,0,12,4.5Z" fill="#34c28d"/>
+									<path d="M12,9.5A2.5,2.5,0,1,1,9.5,12,2.5,2.5,0,0,1,12,9.5m0-2A4.5,4.5,0,1,0,16.5,12,4.507,4.507,0,0,0,12,7.5Z" fill="#34c28d"/>
+								</g>
+							</g>
+						</svg>
+					</td>
+					<td>2.5k долей</td>
+				</tr>
+				<tr>
+					<td>7 Lvl</td>
+					<td>60k</td>
+					<td>60k</td>
+					<td>500k</td>
+					<td>5%|3%|2%|1%|1%|1%|0.5%</td>
+					<td>
+						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+							<g>
+								<path d="M0,0H24V24H0Z" fill="none"/>
+							</g>
+							<g>
+								<g>
+									<path d="M12,6.5A9.77,9.77,0,0,1,20.82,12,9.822,9.822,0,0,1,3.18,12,9.77,9.77,0,0,1,12,6.5m0-2A11.827,11.827,0,0,0,1,12a11.817,11.817,0,0,0,22,0A11.827,11.827,0,0,0,12,4.5Z" fill="#34c28d"/>
+									<path d="M12,9.5A2.5,2.5,0,1,1,9.5,12,2.5,2.5,0,0,1,12,9.5m0-2A4.5,4.5,0,1,0,16.5,12,4.507,4.507,0,0,0,12,7.5Z" fill="#34c28d"/>
+								</g>
+							</g>
+						</svg>
+					</td>
+					<td>5k долей</td>
+				</tr>
+				<tr>
+					<td>8 Lvl</td>
+					<td>150k</td>
+					<td>150k</td>
+					<td>1m</td>
+					<td>5%|3%|2%|1%|1%|1%|0.5%|0.5%</td>
+					<td>
+						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+							<g>
+								<path d="M0,0H24V24H0Z" fill="none"/>
+							</g>
+							<g>
+								<g>
+									<path d="M12,6.5A9.77,9.77,0,0,1,20.82,12,9.822,9.822,0,0,1,3.18,12,9.77,9.77,0,0,1,12,6.5m0-2A11.827,11.827,0,0,0,1,12a11.817,11.817,0,0,0,22,0A11.827,11.827,0,0,0,12,4.5Z" fill="#34c28d"/>
+									<path d="M12,9.5A2.5,2.5,0,1,1,9.5,12,2.5,2.5,0,0,1,12,9.5m0-2A4.5,4.5,0,1,0,16.5,12,4.507,4.507,0,0,0,12,7.5Z" fill="#34c28d"/>
+								</g>
+							</g>
+						</svg>
+					</td>
+					<td>10k долей</td>
+				</tr>
+				<tr>
+					<td>9 Lvl</td>
+					<td>300k</td>
+					<td>300k</td>
+					<td>1.5m</td>
+					<td>5%|3%|2%|1%|1%|1%|0.5%|0.5%|0.5%</td>
+					<td>
+						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+							<g>
+								<path d="M0,0H24V24H0Z" fill="none"/>
+							</g>
+							<g>
+								<g>
+									<path d="M12,6.5A9.77,9.77,0,0,1,20.82,12,9.822,9.822,0,0,1,3.18,12,9.77,9.77,0,0,1,12,6.5m0-2A11.827,11.827,0,0,0,1,12a11.817,11.817,0,0,0,22,0A11.827,11.827,0,0,0,12,4.5Z" fill="#34c28d"/>
+									<path d="M12,9.5A2.5,2.5,0,1,1,9.5,12,2.5,2.5,0,0,1,12,9.5m0-2A4.5,4.5,0,1,0,16.5,12,4.507,4.507,0,0,0,12,7.5Z" fill="#34c28d"/>
+								</g>
+							</g>
+						</svg>
+					</td>
+					<td>15k долей</td>
+				</tr>
+				<tr>
+					<td>10 Lvl</td>
+					<td>500k</td>
+					<td>500k</td>
+					<td>2.5m</td>
+					<td>5%|3%|2%|1%|1%|1%|0.5%|0.5%|0.5%|0.5%</td>
+					<td>
+						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+							<g>
+								<path d="M0,0H24V24H0Z" fill="none"/>
+							</g>
+							<g>
+								<g>
+									<path d="M12,6.5A9.77,9.77,0,0,1,20.82,12,9.822,9.822,0,0,1,3.18,12,9.77,9.77,0,0,1,12,6.5m0-2A11.827,11.827,0,0,0,1,12a11.817,11.817,0,0,0,22,0A11.827,11.827,0,0,0,12,4.5Z" fill="#34c28d"/>
+									<path d="M12,9.5A2.5,2.5,0,1,1,9.5,12,2.5,2.5,0,0,1,12,9.5m0-2A4.5,4.5,0,1,0,16.5,12,4.507,4.507,0,0,0,12,7.5Z" fill="#34c28d"/>
+								</g>
+							</g>
+						</svg>
+					</td>
+					<td>25k долей</td>
+				</tr>
+			</table>
+		</div>
+		
+		<!--MY TEAM-->
 		<div class="team-table-wrapper">
 			<table class="team-table">
 				<tr>
@@ -101,6 +358,7 @@
 					<th class="team-reg-date">Дата регистрации</th>
 					<th class="team-mem-team">Команда</th>
 					<th>Бонус</th>
+					<th></th>
   				</tr>
 				<tr>
 					<td><img src="images/team/hideo.jpg" alt="hideo" class="team-member-image"></td>
@@ -167,7 +425,8 @@
 				</button>
 			</div>
 		</div>
+		
 	</main>
-	<script src="scripts/script.js"></script>
+	<script src="../scripts/main.js"></script>
 </body>
 </html>
