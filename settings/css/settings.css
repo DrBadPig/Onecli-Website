@@ -436,10 +436,13 @@ input[type=password] {
 
 /*MEDIA*/
 
-/*1024 px*/
+/*1366 px*/
 
-@media screen and (max-width: 1024px) {
-	
+@media screen and (min-width: 1366px) {
+	.settings-info, .user-info-section {
+		width: 1027px;
+		margin: 0px auto;
+	}
 }
 
 /*TABLET*/
