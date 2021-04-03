@@ -484,4 +484,88 @@ input[type=password] {
 	.pws-info > span {
 		margin: 0px 20px;
 	}
+	
+/*	porfile info*/
+	.photo-section {
+		height: 393px;
+	}
+	.profile-info-wrapper {
+		height: 809px;
+	}
+	.user-about-section {
+		height: 216px;
+		margin: 30px 0px 0px 0px;
+	}
+	.user-about-section div {
+		align-items: flex-start;
+		flex-direction: column;
+	}
+	.user-about-section > div > span {
+		font-size: 10px;
+		margin-bottom: 15px;
+	}
+	.user-about-section > div > div {
+		font-size: 11px;
+	}
+	.user-about-section > div > div input[type=text] {
+		font-size: 11px;
+		font-weight: 300;
+	}
+	.user-about-section div:first-child > div {
+		width: 100%;
+		flex-direction: row;
+		border-radius: 0px;
+	}
+	.user-about-section .text-area {
+		width: 96%;
+		height: 70px;
+		border-radius: 0px;
+		font-size: 11px;
+	}
+	.user-socials {
+		height: 385px;
+	}
+	.user-socials-header span {
+		font-size: 11px;
+	}
+	.user-socials-list div {
+		flex-direction: column;
+		font-size: 11px;
+		align-items: flex-start;
+	}
+	.user-socials-list div span {
+		margin: 0px 0px 10px 10px;
+	}
+	.user-socials-list div input[type=text] {
+		border-radius: 0px;
+		width: 96%;
+		padding: 10px 2%;
+	}
+/*	account info*/
+	.account-info {
+		height: 993px;
+	}
+	.account-info h2 {
+		font-size: 12px;
+	}
+	.main-account-info div span {
+		font-size: 11px;
+	}
+	.password-change div span, .password-change div input{
+		font-size: 11px;
+	}
+	.payments {
+		height: 286px;
+		font-size: 11px;
+	}
+	.payments h3 {
+		font-size: 13px;
+	}
+	.payments-list input[type=text] {
+		font-size: 11px;
+	}
+	.payments .warning {
+		height: 66px;
+		font-size: 10px;
+	}
 }
