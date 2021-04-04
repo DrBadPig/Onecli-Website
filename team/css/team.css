@@ -217,18 +217,19 @@
 	width: 100%;
 	border-radius: 8px;
 	background-color: #ffffff;
-	margin: 20px 0px 0px 0px;
 	box-shadow: 0px 0px 14px rgba(0,0,0,0.1);
 	
 	position: relative;
-	bottom: 0px;
+	display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .team-table {
-	width: 94%;
+	width: 92%;
 	border-spacing: 20px 12px;
 	height: 480px;
-	margin: 0px 3%;
+	margin: 0px 4%;
 	
 	text-align: left;
 }
@@ -243,6 +244,11 @@
 .team-table td {
 	vertical-align: middle;
 	font-size: 14px;
+}
+
+.team-table td:nth-child(7) {
+	display: none;
+	cursor: pointer;
 }
 
 .team-table td:first-child {
@@ -268,16 +274,17 @@
 
 .team-member-image {
 	position: relative;
-	width: 40px;
-	height: 40px;
-	border-radius: 30px;
-	border: 1px solid #34c38d;
+	width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    border: 1px solid #34C38D;
+    margin: 0px 15px 0px 0px;
 }
 
 /*TABLE PAGER*/
 
 .team-table-pager {
-	width: auto;
+	width: 60%;
 	height: 80px;
 	margin: 0px 33%;
 	font-size: 14px;
@@ -301,14 +308,299 @@
 	margin-left: 5px;
 }
 
+/*MODALS*/
+
+/*send message*/
+
+.send-message-modal {
+	width: 446px;
+	height: 462px;
+	border-radius: 8px;
+	background-color: #ffffff;
+	
+	position: relative;
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+	justify-content: space-between;
+}
+
+.send-message-modal h2 {
+	text-align: center;
+	padding: 15px 0px;
+	width: 100%;
+	margin: 0px;
+	border-bottom: 1px solid #34C38D;
+}
+
+.send-message-modal input[type=text] {
+	width: calc(95% - 30px);
+	padding: 10px 15px;
+	font-size: 15px;
+	border-bottom: none;
+	background-color: #F3F5F4;
+	border-radius: 4px;
+}
+
+.send-message-modal .text-area {
+	height: 250px;
+	width: calc(95% - 30px);
+	padding: 10px 15px;
+	font-size: 15px;
+	color: #83858c;
+	text-align: left;
+	box-shadow: none;
+	background-color: #F3F5F4;
+	border-radius: 4px;
+}
+
+.send-message-modal .btn {
+	width: 95%;
+	margin: 0px 0px 15px 0px;
+	border-radius: 4px;
+}
+
+/*INBOX MODAL*/
+
+.inbox-modal {
+	width: 90%;
+	height: 462px;
+	border-radius: 8px;
+	background-color: #ffffff;
+	padding: 5px;
+	font-size: 14px;
+	
+	overflow: auto;
+	
+	position: relative;
+}
+
+.inbox-modal::-webkit-scrollbar-track {
+	border-radius: 8px;
+}
+
+.inbox-modal::-webkit-scrollbar-thumb {
+	border-radius: 8px;
+}
+
+.inbox-modal .mail {
+	width: 100%;
+	height: 70px;
+	border-radius: 8px;
+	cursor: pointer;
+	margin: 0px 0px 5px 0px;
+	
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.inbox-modal .mail:hover {
+	background-color: #f9fafc;
+}
+
+.inbox-modal .unread {
+	background-color: #f9fafc;
+}
+
+.inbox-modal .mail .photo {
+	width: 40px;
+	height: 40px;
+	border-radius: 30px;
+	border: 1px solid #34C38D;
+	margin: 0px 15px;
+}
+
+.inbox-modal .mail .text {
+	color: #8a8c99;
+	margin: 0px auto 0px 0px;
+	
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: space-between;	
+}
+
+.inbox-modal .mail .date {
+	color: #8a8c99;
+	margin: 0px 15px;
+}
+
+/*MAIL FULL*/
+
+.mail-full-notify {
+	width: 90%;
+    height: 462px;
+    border-radius: 8px;
+    background-color: #ffffff;
+    padding: 5px;
+    font-size: 14px;
+    overflow: auto;
+    position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+.mail-full-notify .mail-header {
+	width: 97%;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	margin: 10px 0px;
+}
+.mail-full-notify .mail-header .photo {
+	width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    border: 1px solid #34C38D;
+    margin: 0px 15px 0px 0px;
+}
+
+.mail-header .mail-info {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: space-between;
+	
+    margin: 0px auto 0px 0px;
+}
+
+.mail-header .date {
+	color: #8a8c99;
+    margin: 0px 15px;
+}
+
+.mail-full-notify .text {
+	width: 97%;
+	overflow-x: auto;
+}
+
+.mail-full-notify > span {
+	width: 97%;
+}
+
+/*TEAM MORE*/
+
+.team-more {
+	width: 398px;
+	height: 296px;
+	
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.team-more .info {
+	width: calc(100% - 60px);
+	padding: 0px 30px;
+	height: 218px;
+	background-color: #ffffff;
+	border-radius: 8px;
+
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.team-more .info div {
+	width: 100%;
+}
+
+.info-header {
+	width: 100%;
+	margin: 20px 0px 20px 0px;
+	display: flex;
+	align-items: flex-start;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.team-more .socials {
+	width: 100%;
+	height: auto;
+    position: relative;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	
+    display: flex;
+	flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.team-more .info .socials .socials-list {
+	position: relative;
+	padding: 0px;
+	margin: 0px 0px 10px -10px;
+}
+
+.team-more .date {
+	width: calc(100% - 60px);
+	padding: 0px 30px;
+	height: 68px;
+	background-color: #34C38D;
+	border-radius: 8px;
+	
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+/*AFFILIATE LINK INFO*/
+
+.aff-link-info-modal {
+	width: 100%;
+	height: 70px;
+	background-color: #ffffff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.aff-link-info-modal p {
+	text-align: center;
+	padding: 0px 0%;
+	font-weight: 300;
+	text-transform: uppercase;
+}
+
+/*AFFILIATE INCOME INFO*/
+
+.aff-income-modal {
+	width: 335px;
+	
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.aff-income-modal div {
+	width: 100%;
+	height: 50px;
+	border-radius: 8px;
+	background-color: #34C38D;
+	font-size: 14px;
+	margin: 10px 0px 0px 0px;
+}
+
 /*MEDIA*/
 
 /*MEDIA > 1366*/
 
 @media screen and (min-width: 1366px) {
-	.affiliate-link, .personal-landing, .affiliate-info {
+	.affiliate-link, .personal-landing, .affiliate-info, .team-table-wrapper {
 		width: 1027px;
 		margin: 0px auto;
+	}
+	.inbox-modal, .mail-full-notify {
+		width: 990px;
 	}
 }
 
@@ -372,6 +664,16 @@
 	.affiliate-header span:nth-child(2) {
 		margin: 0px 30% 0px 0%;
 	}
+/*	table team*/
+	.team-table td:nth-child(7) {
+		display: table-cell;
+	}
+	.team-table th:nth-child(2), .team-table th:nth-child(4), .team-table th:nth-child(5) {
+		display: none;
+	}
+	.team-table td:nth-child(3), .team-table td:nth-child(5), .team-table td:nth-child(6) {
+		display: none;
+	}
 }
 
 /*MEDIA MOBILE*/
@@ -406,7 +708,7 @@
 	}
 	.landing-email-short-section {
 		height: 50px;
-		margin: 0px 20px 15px;
+		margin: 10px 20px 15px;
 		width: calc(100% - 40px);
 	}
 /*	affiliate table*/
@@ -439,5 +741,146 @@
 	}
 	.affiliate-table {
 		font-size: 10px;
+	}
+/*	team table*/
+	.team-table th:nth-child(3) {
+		display: none;
+	}
+	.team-table td:nth-child(4) {
+		display: none;
+	}
+	.team-table {
+		
+		width: 88%;
+		margin: 0px 6%;
+	}
+	.team-table th, .team-table td {
+		font-size: 10px;
+	}
+	.team-member-image {
+		width: 30px;
+		height: 30px;
+	}
+/*	send message modla*/
+	.send-message-modal {
+		width: 80%;
+	}
+	.send-message-modal h2 {
+		font-size: 14px;
+	}
+	.send-message-modal input[type=text] {
+		width: calc(90% - 30px);
+		font-size: 12px;
+	}
+	.send-message-modal .text-area {
+		width: calc(90% - 30px);
+		font-size: 12px;
+	}
+	.send-message-modal .btn {
+		width: 90%;
+		font-size: 12px;
+	}
+/*	inbox modal*/
+	.inbox-modal .mail {
+		position: relative;
+		height: 120px;
+		font-size: 12px;
+	}
+	.inbox-modal .mail .photo {
+		width: 50px;
+		height: 50px;
+		position: absolute;
+		top: 10px;
+		left: 0px;
+	}
+	.inbox-modal .mail .text {
+		font-size: 0px;
+	}
+	.inbox-modal .mail .text > span > span:nth-child(2) {
+		position: absolute;
+		top: 70px;
+		left: 10px;
+		font-size: 12px;
+	}
+	.inbox-modal .mail .text > span:last-child {
+		position: absolute;
+		top: 90px;
+		left: 10px;
+		font-size: 12px;
+	}
+	.inbox-modal .mail .login {
+		position: absolute;
+		top: 30px;
+		left: 80px;
+		font-size: 12px;
+	}
+	.inbox-modal .mail .date {
+		position: absolute;
+		top: 30px;
+		right: 0px;
+		font-size: 12px;
+	}
+	/*MAIL FULL*/
+	.mail-full-notify .mail-header .photo {
+		width: 40px;
+		height: 40px;
+		border-radius: 30px;
+		border: 1px solid #34C38D;
+		margin: 0px 15px 0px 0px;
+	}
+	.mail-header .mail-info {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: space-between;
+
+		margin: 0px auto 0px 0px;
+	}
+	.mail-header .mail-info span:first-child {
+		font-size: 19px;
+	}
+	.mail-header .mail-info span:last-child {
+		font-size: 14px;
+	}
+	.mail-header .date {
+		position: absolute;
+		right: 0px;
+		top: 10px;
+		font-size: 12px;
+	}
+	.mail-full-notify .text {
+		font-size: 12px;
+	}
+	.mail-full-notify > span {
+		width: 97%;
+		font-size: 14px;
+	}
+/*	team more*/
+	.team-more {
+		width: 308px;
+		height: 246px;
+	}
+	.team-more .info {
+		height: 188px;
+	}
+	.team-more .info div {
+		font-size: 12px;
+	}
+	.team-more .date {
+		height: 50px;
+	}
+	.team-more .date span {
+		font-size: 11px;
+	}
+/*	affiliate income info*/
+	.aff-income-modal {
+		width: 305px;
+	}
+	.aff-income-modal span {
+		font-size: 12px;
+	}
+	.aff-income-modal div {
+		height: 40px;
+		font-size: 12px;
 	}
 }

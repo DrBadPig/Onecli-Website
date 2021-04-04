@@ -1,60 +1,6 @@
 @charset "utf-8";
 /* CSS Document */
 
-/* MODAL NOTIFY */
-
-.modals-notify button {
-	width: 80%;
-	background-color: #ffffff;
-}
-
-.modals-notify button:hover {
-	width: 80%;
-	background-color: #ECECEC;
-}
-
-.modal-notify-success {
-	width: 349px;
-	height: 152px;
-	background-color: rgba(62, 197, 146, 0.9);
-	border-radius: 8px;
-	border: 2px solid #ffffff;
-	box-shadow: 0px 0px 10px rgba(52, 194, 141, 1);
-	
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-direction: column;
-}
-
- .modal-notify-success button {
-	color: rgb(62, 197, 146);
-	margin-top: 15px;
-}
-
-.modal-notify-failure {
-	width: 349px;
-	height: 194px;
-	background-color: rgba(186, 59, 56, 0.9);
-	border-radius: 8px;
-	border: 2px solid #ffffff;
-	box-shadow: 0px 0px 10px rgba(186, 59, 56, 1);
-	text-align: center;
-	
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-direction: column;
-}
-
-.modal-notify-failure button {
-	color: rgb(186, 59, 56);
-}
-
-.modal-notify-failure p {
-	padding: 0px 35px;
-}
-
 /* MODALS */
 
 /*SHARE EXCHANGE*/
