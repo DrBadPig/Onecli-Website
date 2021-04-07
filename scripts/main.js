@@ -29,3 +29,15 @@ function onClickUserSubmenu() {
 function onClickLanguageChooserMenu() {
 	let lang_chooser = document.getElementById('language-chooser-menu').classList.toggle('hidden');
 }
+
+//OPEN CLOSE LIVESTATS
+function OpenStatsMenu() {
+	let stats = document.getElementById('live-stats').setAttribute("style", "display: flex;");
+	let search = document.getElementById('search-wrapper').setAttribute("style", "display: none;");
+}
+
+//OPEN CLOSE SEARCH
+function OpenSearchMenu() {
+	let search = document.getElementById('search-wrapper').setAttribute("style", "display: flex;");
+	let stats = document.getElementById('live-stats').setAttribute("style", "display: none;");
+}

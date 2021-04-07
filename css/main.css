@@ -619,6 +619,10 @@ input[type=checkbox]:checked + .slider:before {
 	font-size: 16px;
 }
 
+.t-size-18 {
+	font-size: 18px;
+}
+
 .t-size-20 {
 	font-size: 20px;
 }
@@ -661,6 +665,10 @@ input[type=checkbox]:checked + .slider:before {
 
 .t-bold-200 {
 	font-weight: 200;
+}
+
+.t-italic {
+	font-style: italic;
 }
 
 .t-uppercase {
