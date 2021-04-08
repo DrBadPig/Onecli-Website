@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Моя команда</title>
+	<title>Лоты</title>
 	<link href="../css/main.css" rel="stylesheet">
 	<link href="css/lots.css" rel="stylesheet">
 	<link href="../images/logo.png" rel="icon">
@@ -386,6 +386,7 @@
 			<div class="lots-search">
 				<div class="search-wrapper" id="search-wrapper">
 					<h2 class="t-uppercase t-bold-400 t-size-18 t-gray"><span onClick="OpenStatsMenu()">Live статистика</span> | <span class="t-main">Поиск</span></h2>
+					<hr width="95%">
 					<div class="search-price div-flex df-col df-spacea">
 						<span class="t-size-14 t-main">Поиск по цене:</span>
 						<input type="text" placeholder="От...">
@@ -395,14 +396,15 @@
 						<span class="t-size-14 t-black">Выберите категорию:</span>
 						<div class="search-type-wrapper">
 							<div class="active"><span>Все</span></div>
-							<div><span>Текущие аукционы</span></div>
-							<div><span>Будущие аукционы</span></div>
+							<div class="active"><span>Текущие аукционы</span></div>
+							<div class="active"><span>Будущие аукционы</span></div>
 							<div><span>Горячие предложения</span></div>
 						</div>
 					</div>
 				</div>
 				<div style="display: none;" class="live-stats" id="live-stats">
 					<h2 class="t-uppercase t-bold-400 t-size-18 t-gray"><span class="t-main">Live статистика</span> | <span onClick="OpenSearchMenu()">Поиск</span></h2>
+					<hr width="95%">
 					<div class="last-transactions">
 						<span class="t-size-14 t-darkgray">Приобретённые лоты:</span>
 						<div class="transaction-wrapper">

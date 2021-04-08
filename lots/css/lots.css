@@ -44,7 +44,6 @@
 .lots-wrapper {
 	width: 67%;
 	height: 90%;
-	background-color: burlywood;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -54,7 +53,6 @@
 .lot-wrapper {
 	width: 100%;
 	height: auto;
-	background-color: steelblue;
 	
 	display: flex;
 	flex-direction: row;
@@ -182,7 +180,6 @@
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	margin-bottom: 8px;
 }
 
 .lots-wrapper .pager svg {
@@ -200,7 +197,6 @@
 .pager .pages {
 	width: 80%;
 	height: 25px;
-	background-color: whitesmoke;
 	
 	display: flex;
 	flex-direction: column;
@@ -242,6 +238,10 @@
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+}
+
+.lots-search hr {
+	display: none;
 }
 
 .search-wrapper, .live-stats {
@@ -393,6 +393,148 @@
 	.money-interaction span {
 		margin: 0px 15px 0px 0px; 
 	}
+	/*lots section*/
+	.lots-section {
+		height: 1245px;
+		flex-direction: column;
+	}
+	.lots-wrapper {
+		order: 2;
+	}
+	.lots-search {
+		width: 100%;
+		height: 337px;
+	}
+	.lots-search hr {
+		display: block;
+		margin: -10px 0px -10px 0px;
+	}
+	.search-wrapper, .live-stats {
+		width: 100%;
+		height: 247px;
+	}
+	.search-wrapper h2, .live-stats h2 {
+		text-align: left;
+		width: 95%;
+		order: 0;
+	}
+	.search-type {
+		width: 95%;
+	}
+	.search-type .search-type-wrapper {
+		height: 100px;
+		flex-wrap: wrap;
+		order: 1;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+	.search-type > span {
+		color: #34C38D;
+		width: 95%;
+		text-align: left;
+	}
+	.search-type .search-type-wrapper div {
+		width: 49%;
+   		margin: 3px 0px;
+    	height: 40px;
+	}
+	.search-price {
+		width: 95%;
+		order: 2;
+		flex-direction: row;
+		position: relative;
+		justify-content: space-between;
+	}
+	.search-price > span {
+		position: absolute;
+		top: -15px;
+		left: 0px;
+	}
+	.search-price input[type=text] {
+		width: 49%;
+		text-align: left;
+	}
+	.last-transactions {
+		width: 95%;
+		height: 120px;
+		margin: 0px 0px 70px 0px;
+	}
+	.transaction-wrapper {
+		display: flex;
+    	flex-direction: row;
+    	align-items: center;
+		flex-wrap: wrap;
+    	justify-content: space-between;
+	}
+	.transaction-wrapper .transaction {
+		width: 49%;
+	}
+	.transaction:nth-child(9), .transaction:nth-child(8), .transaction:nth-child(7) {
+		display: none;
+	}
+	.last-transactions > span {
+		color: #34C38D;
+	}
+/*	lots*/
+	.lots-wrapper {
+		width: 95%;
+	}
+	.lot-wrapper {
+		height: 898px;
+	}
+	.lot {
+		width: 49%;
+		height: 435px;
+		flex-direction: column;
+		border-radius: 8px;
+	}
+	.lot:nth-child(8), .lot:nth-child(7), .lot:nth-child(6), .lot:nth-child(5) {
+		display: none;
+	}
+	.lot .total-price, .lot .timer, .lot .true-price {
+		width: 100%;
+		border-right: none;
+		border-left: none;
+		border-radius: 8px 8px 0px 0px;
+	}
+	.lot .total-price {
+		height: 140px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-between;
+	}
+	.lot .total-price div:first-child {
+		height: 115px;	
+	}
+	.lot .total-price div:last-child {
+		border-radius: 0px;
+	}
+	.lot .timer {
+		height: auto;
+	}
+	.lot .true-price {
+		height: 100px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-between;
+		border-radius: 0px 0px 8px 8px;
+	}
+	.lot .true-price div:first-child {
+		height: 50px;
+	}
+	.lot .true-price div:last-child {
+		height: 45px;
+		border-radius: 0px 0px 8px 8px;
+	}
+/*	pager*/
+	.lots-wrapper .pager {
+		margin-bottom: 24px;
+	}
+	.pager .pages .second {
+		display: flex;
+	}
 }
 
 /*MEDIA 610*/
@@ -424,5 +566,80 @@
 /*	MONEY INTERACTION BUTTONS*/
 	.money-interaction {
 		font-size: 13px;
+	}
+	.lots-section {
+		height: 2198px;
+		flex-direction: column;
+	}
+	.lots-wrapper {
+		width: 90%;
+		height: 1700px;
+	}
+	.lot-wrapper {
+		height: 1620px;
+	}
+	.lot {
+		width: 100%;
+		height: 391px;
+	}
+	.search-wrapper, .live-stats {
+		height: 380px;
+/*		margin: 20px 0px 0px 0px;*/
+	}
+	.search-wrapper h2, .live-stats h2 {
+		width: 90%;
+		font-size: 16px;
+	}
+	hr {
+		width: 90%;
+	}
+	.search-type {
+		width: 90%;
+		font-size: 12px;
+	}
+	.search-type > span {
+		font-size: 12px;
+	}
+	.search-type .search-type-wrapper {
+		height: 163px;
+		flex-wrap: wrap;
+		order: 1;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+	.search-type .search-type-wrapper div {
+		width: 100%;
+		height: 35px;
+	}
+	.search-price {
+		width: 90%;
+		flex-direction: column;
+	}
+	.search-price > span, .last-transactions > span {
+		font-size: 12px;
+	}
+	.search-price input[type=text] {
+		width: 100%;
+		font-size: 12px;
+	}
+	.transaction-wrapper {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+	.transaction-wrapper .transaction {
+		width: 100%;
+	}
+	.last-transactions {
+		width: 90%;
+		font-size: 12px;
+		height: 240px;
+		margin: 0px 0px 40px 0px;
+	}
+	.lots-wrapper .pager {
+		width: 100%;
+		margin-bottom: 10px;
 	}
 }
