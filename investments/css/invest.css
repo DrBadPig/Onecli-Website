@@ -67,21 +67,6 @@
 	border: 2px solid #34c38d;
 }
 
-.modal-close-button {
-	width: 58px;
-	height: 58px;
-	background: url(../images/invest-images/close-bg.png);
-	
-	position: absolute;
-	top: 0px;
-	right: 0px;
-}
-
-.modal-close-button svg {
-	margin: 10px 0px 0px 33px;
-	cursor: pointer;
-}
-
 .modal-your-balance {
 	width: 90%;
 	height: 50px;

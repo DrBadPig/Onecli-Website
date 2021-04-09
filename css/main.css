@@ -131,6 +131,31 @@ input[type=checkbox]:checked + .slider:before {
 	background-color: #434c69;
 }
 
+/*------------------CUSTOM SELECT--------------*/
+
+select {
+	border: 0px;
+	outline: none;
+	padding: 10px 20px;
+	border-radius: 8px;
+	font-size: 14px;
+	font-weight: 300;
+	color: #ffffff;
+	background-color: #949cb5;
+}
+
+option:hover {
+	background-color: #666B7C;
+}
+
+option:first-child {
+	border-radius: 8px 8px 0px 0px;
+}
+
+option:last-child {
+	border-radius: 0px 0px 8px 8px;
+}
+
 /*------------------SCROLLBAR------------------*/
 
 /* width */
@@ -202,6 +227,21 @@ input[type=checkbox]:checked + .slider:before {
 
 .modal-notify-failure p {
 	padding: 0px 35px;
+}
+
+.modal-close-button {
+	width: 58px;
+	height: 58px;
+	background: url(../images/close-bg.png);
+	
+	position: absolute;
+	top: 0px;
+	right: 0px;
+}
+
+.modal-close-button svg {
+	margin: 10px 0px 0px 33px;
+	cursor: pointer;
 }
 
 /*------------------HEADER------------------*/
