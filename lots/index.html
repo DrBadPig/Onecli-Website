@@ -69,10 +69,67 @@
 	</div>
 	
 	<!--NAVIGATION FULL-->
-	
+	<nav class="main-navigation" id="fullNav">
+		<div class="main-navigation-wrapper">
+			<!-- NAVIGATION HEADER -->
+			<div class="nav-header div-flex-two">
+				<span class="t-white">Навигация</span>
+				<img src="../images/menu.png" alt="Menu" onClick="onClickNavigation()">
+			</div>
+			<!-- MENU -->
+			<ul class="menu-list">
+				<li><a href="../investments/index.html"><img src="../images/menu-icons/inv.png" alt="investments">Инвестиции в ONECLI.</a></li>
+				<li><a href="../team/index.html"><img src="../images/menu-icons/team.png" alt="team">Моя команда</a></li>
+				<li><a href="../exchange/index.html"><img src="../images/menu-icons/br.png" alt="exchange">Биржа долей</a></li>
+				<li class="menu-active"><a href="../lots/index.html"><img src="../images/menu-icons/lots.png" alt="lots">Лоты <span class="t-notify">[Beta]</span></a></li>
+				<li><a href="../idea/index.html"><img src="../images/menu-icons/idea.png" alt="idea">Идея ONECLI.</a></li>
+				<li><a href="../bounty/index.html"><img src="../images/menu-icons/btn.png" alt="bounty">Bounty кампания</a></li>
+				<li><a href="../promo/index.html"><img src="../images/menu-icons/promo.png" alt="promo">Промоматериалы</a></li>
+				<li><a href="../faq/index.html"><img src="../images/menu-icons/faq.png" alt="faq">FAQ | Вопрос - ответ</a></li>
+			</ul>
+			<!-- SOCIALS -->
+			<div class="socials">
+				<ul class="socials-list hidden" id="socials-list">
+					<li><a href="https://www.youtube.com/channel/UClxixUM9qzOjoFtUd5RNBzQ"><img src="../images/socials/yt0.png" alt="YT"></a></li>
+					<li><a href="https://www.facebook.com/oneclicom/"><img src="../images/socials/f0.png" alt="FB"></a></li>
+					<li><a href="https://instagram.com/oneclicom"><img src="../images/socials/i0.png" alt="IN"></a></li>
+					<li><a href="https://twitter.com/oneclicom"><img src="../images/socials/tw0.png" alt="TW"></a></li>
+					<li><a href="https://teleg.one/onecli"><img src="../images/socials/t0.png" alt="TG"></a></li>
+					<li><a href="https://vk.com/onecli"><img src="../images/socials/vk0.png" alt="VK"></a></li>
+				</ul>
+				<span class="t-gray t-size-12" id="socials-h1" onClick="onClickSocials()">СОЦИАЛЬНЫЕ СЕТИ</span>
+				<img src="../images/str_left.png" alt="socials" onClick="onClickSocials()">
+			</div>
+			<!-- CRYPTO SECTION -->
+			<div class="crypto-rate-wrapper">
+				<div class="crypto-header div-flex-two">
+					<span class="t-white">Курсы криптовалют</span>
+					<img src="../images/bitcoin.png" alt="crypt">
+				</div>
+				<ul class="crypto-list">
+					<li>BITCOIN (BTC)<br>9531.19 USD (0.45%)</li>
+					<li>ETHEREUM (ETH)<br>209.83 USD (1.18%)</li>
+					<li>RIPPLE (XRP)<br>0.309862 USD (0.10%)</li>
+					<li>ETHEREUM (ETH)<br>209.83 USD (1.18%)</li>
+					<li>BITCOIN CASH (BCH)<br>306.20 USD (0.26%)</li>
+					<li>LITECOIN (LTC)<br>89.13 USD (0.04%)</li>
+					<li>CARDANO (ADA)<br>0.059253 USD (1.35%)</li>
+					<li>EOS (EOS)<br>4.29 USD (-1.51%)</li>
+					<li>STELLAR (XLM)<br>0.083855 USD (0.18%)</li>
+					<li>NEO (NEO)<br>11.39 USD (1.07%)</li>
+					<li>IOTA (MIOTA)<br>0.288540 USD (0.43%)</li>
+					<li>MONERO (XMR)<br>79.88 USD (2.05%)</li>
+					<li>DASH (DASH)<br>111.05 USD (1.23%)</li>
+					<li>TRON (TRX)<br>0.022540 USD (2.60%)</li>
+					<li>NEM (XEM)<br>0.063579 USD (-0.22%)</li>
+					<li>ETHEREUM CLASSIC (ETC)<br>5.95 USD (0.90%)</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
 	
 	<!--MODALS-->
-	<div class="modals">
+	<div style="display: none;" class="modals">
 		<!--SEND SUCCESS MODAL-->
 		<div style="display: none;" class="send-success-modal">
 			<div class="modal-full-wrapper">
@@ -245,6 +302,111 @@
 					<div class="type">
 						<span class="t-uppercase t-italic"><span>Оплаченные</span> | <span class="t-main">В обработке</span> | <span>Отправленные</span></span>
 					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!--REFILL MODAL-->
+		<div style="display: none;" class="refill-modal">
+			<div class="modal-full-wrapper">
+				<div class="modal-close-button">
+					<svg xmlns="http://www.w3.org/2000/svg" width="14.798" height="14.798" viewBox="0 0 14.798 14.798">
+  						<g transform="translate(0.707 0.707)">
+    						<line x2="13.384" y2="13.384" fill="none" stroke="#fff" stroke-width="2"/>
+    						<line x1="13.384" y2="13.384" fill="none" stroke="#fff" stroke-width="2"/>
+  						</g>
+					</svg>			
+				</div>
+				<h2 class="t-bold-300 t-darkgray t-uppercase">Пополнение баланса</h2>
+				<div class="input">
+					<span class="t-bold-300">Количество:</span>
+					<input type="text">
+					<span class="t-main">RTX</span>
+				</div>
+				<div class="tip">
+					<span>1 RTX = 0,5$</span>
+				</div>
+				<div class="input">
+					<span class="t-bold-300">Стоимость:</span>
+					<input type="text">
+					<span class="t-main">$</span>
+				</div>
+				<div class="payments">
+					<span class="t-black t-bold-300">Выберите способ оплаты</span>
+					<div class="payments-wrapper">
+						<div class="payment"></div>
+						<div class="payment active"></div>
+						<div class="payment"></div>
+						<div class="payment"></div>
+						<div class="payment"></div>
+						<div class="payment"></div>
+						<div class="payment"></div>
+						<div class="payment"></div>
+						<div class="payment"></div>
+						<div class="payment"></div>
+						<div class="payment"></div>
+						<div class="payment"></div>
+					</div>
+				</div>
+				<button class="btn">Пополнить</button>
+			</div>
+		</div>
+		
+		<!--REFILL MODAL-->
+		<div style="display: none;" class="withdraw-modal">
+			<div class="modal-full-wrapper">
+				<div class="modal-close-button">
+					<svg xmlns="http://www.w3.org/2000/svg" width="14.798" height="14.798" viewBox="0 0 14.798 14.798">
+  						<g transform="translate(0.707 0.707)">
+    						<line x2="13.384" y2="13.384" fill="none" stroke="#fff" stroke-width="2"/>
+    						<line x1="13.384" y2="13.384" fill="none" stroke="#fff" stroke-width="2"/>
+  						</g>
+					</svg>			
+				</div>
+				<div class="your-balance t-bold-300">
+					<span>Ваш баланс:</span>
+					<div><span class="t-uppercase t-bold-400">100 RTX</span></div>
+					<div><span class="t-uppercase">1 RTX = 0,5$</span></div>
+				</div>
+				<h2 class="t-bold-300 t-darkgray t-uppercase">Вывод средств</h2>
+				<div class="payments-text">
+					<span class="t-black t-bold-300">Укажите платежные реквизиты:</span>
+					<div class="payments-wrapper-text">
+						<div class="payment-text active"><span>Visa/MasterCard</span></div>
+						<div class="payment-text">Paypal</div>
+						<div class="payment-text">Payeer</div>
+						<div class="payment-text">Perfect Money</div>
+						<div class="payment-text">AdvCash</div>
+						<div class="payment-text">Okpay</div>
+						<div class="payment-text">Solid Trust Pay</div>
+						<div class="payment-text">Яндекс Деньги</div>
+						<div class="payment-text">Payza</div>
+						<div class="payment-text">Qiwi Wallet</div>
+						<div class="payment-text">Bitcoin</div>
+						<div class="payment-text">WalletOne</div>
+					</div>
+				</div>
+				<div class="choose-payment">
+					<span class="t-bold-300">Выберите платежную систему:</span>
+					<div>
+						<select size="1">
+							<option value="1">Visa/MasterCard</option>
+							<option value="2">Visa/MasterCard</option>
+							<option value="3">Visa/MasterCard</option>
+						</select>
+						<label class="switch">
+  							<input type="checkbox">
+  							<span class="slider round"></span>
+						</label>
+						<span class="t-black t-bold-300">Запомнить выбор</span>
+					</div>
+				</div>
+				<div class="sum">
+					<div>
+						<input type="text" placeholder="Сумма RTX">
+						<input type="text" placeholder="Сумма $">
+					</div>
+					<button class="btn">Вывести</button>
 				</div>
 			</div>
 		</div>

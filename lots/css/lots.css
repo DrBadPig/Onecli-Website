@@ -5,7 +5,7 @@
 
 /*SEND SUCCESS*/
 
-.send-success-modal, .money-processing-modal, .ordering-modal, .send-friend-modal, .cart-modal {
+.send-success-modal, .money-processing-modal, .ordering-modal, .send-friend-modal, .cart-modal, .refill-modal, .withdraw-modal {
 	width: 321px;
 	height: 169px;
 	padding: 10px;
@@ -56,7 +56,7 @@
 	background-color: #34C38D;
 }
 
-.ordering-modal .modal-full-wrapper, .send-friend-modal .modal-full-wrapper, .cart-modal .modal-full-wrapper {
+.ordering-modal .modal-full-wrapper, .send-friend-modal .modal-full-wrapper, .cart-modal .modal-full-wrapper, .withdraw-modal .modal-full-wrapper {
 	justify-content: space-between;
 }
 
@@ -235,6 +235,337 @@
 
 .cart-modal .bottom-menu .type span > span {
 	cursor: pointer;
+}
+
+/*REFILL BALANCE MODAL*/
+
+.refill-modal {
+	width: 573px;
+	height: 532px;
+}
+
+.refill-modal .modal-full-wrapper {
+	justify-content: space-between;
+}
+
+.refill-modal h2 {
+	margin: 40px 0px 0px 0px;
+}
+
+.refill-modal .input {
+	width: 60%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin: 0px 180px 0px 0px;
+	position: relative;
+}
+
+.refill-modal .input input[type=text] {
+	padding: 10px 30px 10px 0px;
+}
+
+.refill-modal .input input[type=text]:focus {
+	border-bottom: 2px solid #34C38D;
+	color: #34C38D;
+}
+
+.refill-modal .input:nth-child(4) span {
+	margin: 0px 8px 0px 0px;
+}
+
+.refill-modal .input span:last-child {
+	margin: 0px;
+	position: absolute;
+	right: 0px;
+}
+
+.refill-modal .tip {
+	width: 106px;
+	height: 23px;
+	
+	position: absolute;
+	top: 105px;
+    right: 40px;
+	
+	background-color: #949cb5;
+	border-radius: 6px;
+	
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #ffffff;
+	font-size: 12px;
+}
+
+.refill-modal .payments {
+	width: 90%;
+	height: 183px;
+	
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.refill-modal .payments .payments-wrapper {
+	width: 100%;
+	height: 139px;
+	display: flex;
+	flex-wrap: wrap;
+	align-content: center;
+	justify-content: space-around;
+}
+
+.payment {
+	width: 93px;
+	height: 33px;
+	border: 2px solid #D3D3D6;
+	border-radius: 8px;
+	margin: 0px 5px 10px 5px;
+	cursor: pointer;
+}
+
+.payment:hover {
+	border: 2px solid #34C38D;
+}
+
+.payments-wrapper .active {
+	border: 2px solid #34C38D;
+}
+
+.payment:nth-child(1) {
+	background: url(../images/payment/mastercard.svg) 100% no-repeat;
+}
+.payment:nth-child(1):hover {
+	background: url(../images/payment/mastercardG.svg) 100% no-repeat;
+}
+
+.payment:nth-child(2) {
+	background: url(../images/payment/visa.svg) 100% no-repeat;
+}
+.payment:nth-child(2):hover {
+	background: url(../images/payment/visaG.svg) 100% no-repeat;
+}
+
+.payment:nth-child(3) {
+	background: url(../images/payment/paypal-logo.svg) 100% no-repeat;
+}
+.payment:nth-child(3):hover {
+	background: url(../images/payment/paypal-logoG.svg) 100% no-repeat;
+}
+
+.payment:nth-child(4) {
+	background: url(../images/payment/PAYEER.svg) 100% no-repeat;
+}
+.payment:nth-child(4):hover {
+	background: url(../images/payment/PAYEERG.svg) 100% no-repeat;
+}
+
+.payment:nth-child(5) {
+	background: url(../images/payment/advcash.svg) 100% no-repeat;
+}
+.payment:nth-child(5):hover {
+	background: url(../images/payment/advcashG.svg) 100% no-repeat;
+}
+
+.payment:nth-child(6) {
+	background: url(../images/payment/okpay.svg) 100% no-repeat;
+}
+.payment:nth-child(6):hover {
+	background: url(../images/payment/okpayG.svg) 100% no-repeat;
+}
+
+.payment:nth-child(7) {
+	background: url(../images/payment/PM.svg) 100% no-repeat;
+}
+.payment:nth-child(7):hover {
+	background: url(../images/payment/PMG.svg) 100% no-repeat;
+}
+
+.payment:nth-child(8) {
+	background: url(../images/payment/payza-logo.svg) 100% no-repeat;
+}
+.payment:nth-child(8):hover {
+	background: url(../images/payment/payza-logoG.svg) 100% no-repeat;
+}
+
+.payment:nth-child(9) {
+	background: url(../images/payment/Bitcoin.svg) 100% no-repeat;
+}
+.payment:nth-child(9):hover {
+	background: url(../images/payment/BitcoinG.svg) 100% no-repeat;
+}
+
+.payment:nth-child(10) {
+	background: url(../images/payment/Qiwi.svg) 100% no-repeat;
+}
+.payment:nth-child(10):hover {
+	background: url(../images/payment/QiwiG.svg) 100% no-repeat;
+}
+
+.payment:nth-child(11) {
+	background: url(../images/payment/yandex-pay-logo.svg) 100% no-repeat;
+}
+.payment:nth-child(11):hover {
+	background: url(../images/payment/yandex-pay-logoG.svg) 100% no-repeat;
+}
+
+.payment:nth-child(12) {
+	background: url(../images/payment/wallet-one.svg) 100% no-repeat;
+}
+.payment:nth-child(12):hover {
+	background: url(../images/payment/wallet-oneG.svg) 100% no-repeat;
+}
+
+.payment:nth-child(1), .payment:nth-child(2), .payment:nth-child(3), .payment:nth-child(8), .payment:nth-child(9), .payment:nth-child(10), .payment:nth-child(11), .payment:nth-child(12), .payment:nth-child(1):hover, .payment:nth-child(2):hover, .payment:nth-child(3):hover, .payment:nth-child(8):hover, .payment:nth-child(9):hover, .payment:nth-child(10):hover, .payment:nth-child(11):hover, .payment:nth-child(12):hover, .payment:nth-child(4), .payment:nth-child(4):hover, .payment:nth-child(5), .payment:nth-child(5):hover, .payment:nth-child(6), .payment:nth-child(6):hover, .payment:nth-child(7), .payment:nth-child(7):hover {
+	background-position: center;
+	background-size: contain;
+}
+
+.refill-modal .btn {
+	width: 50%;
+	margin: 0px 0px 40px 0px;
+}
+
+/*WITHDRAW BALANCE*/
+
+.withdraw-modal {
+	width: 752px;
+	height: 532px;
+}
+
+.withdraw-modal h2 {
+	margin: 80px 0px 0px 0px;
+}
+
+.withdraw-modal .your-balance {
+	width: 126px;
+	height: 79px;
+	
+	font-size: 14px;
+	color: #ffffff;
+	
+	position: absolute;
+	top: 30px;
+	left: 0px;
+	
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.withdraw-modal .your-balance > span {
+	color: #8b99c2;
+}
+
+.withdraw-modal .your-balance div:nth-child(2), .withdraw-modal .your-balance div:nth-child(3) {
+	width: 100%;
+	background-color: #8b99c2;
+	padding: 5px 0px;
+	border-radius: 0px 8px 8px 0px;
+	
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+}
+
+.withdraw-modal .your-balance div:nth-child(3) {
+	background-color: #c5cce0;
+}
+
+.withdraw-modal .your-balance div:nth-child(2) span, .withdraw-modal .your-balance div:nth-child(3) span {
+	margin: 0px 10px 0px 0px;
+}
+
+.payments-text {
+	height: 175px;
+	width: 90%;
+	
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.payments-wrapper-text {
+	width: 100%;
+	height: 137px;
+	
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.payment-text {
+	width: 145px;
+	height: 35px;
+	background-color: #ffffff;
+	border: 2px solid #949cb5;
+	border-radius: 6px;
+	font-size: 14px;
+	font-weight: 300;
+	
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #949cb5;
+}
+
+.payments-wrapper-text .active, .payment-text:hover {
+	background-color: #34C38D;
+	border: 2px solid #34C38D;
+	color: #ffffff;
+}
+
+.withdraw-modal .choose-payment {
+	width: 90%;
+	height: 38px;
+	
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	
+	margin: 0px 0px -30px 0px;
+}
+
+.withdraw-modal .choose-payment div {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.withdraw-modal .choose-payment div label {
+	margin: 0px 10px 0px 35px;
+}
+
+.withdraw-modal .sum {
+	width: 90%;
+	height: 41px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin: 0px 0px 80px 0px;
+}
+
+.withdraw-modal .sum div {
+	width: 67%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.withdraw-modal .sum div input[type=text] {
+	border-bottom: 2px solid #34C38D;
+	font-weight: 300;
+}
+
+.withdraw-modal .sum .btn {
+	width: 194px;
+	height: 41px;
+	padding: 0px;
 }
 
 /*MONEY INTERACTIONS*/
@@ -618,6 +949,34 @@
 /*MEDIA TABLET*/
 
 @media screen and (max-width: 768px) {
+/*	withdraw modal*/
+	.withdraw-modal {
+		width: 682px;
+		height: 640px;
+	}
+	.withdraw-modal .your-balance {
+		width: 146px;
+	}
+	.withdraw-modal .sum {
+		height: 100px;
+		flex-direction: column;
+		margin: 0px 0px 40px 0px;
+	}
+	.withdraw-modal .sum div {
+		width: 100%;
+	}
+	.withdraw-modal .sum div input[type=text] {
+		width: 48%;
+	}
+	.withdraw-modal .sum .btn {
+		width: 100%;
+	}
+	.withdraw-modal .choose-payment {
+		font-size: 14px;
+	}
+	.withdraw-modal .choose-payment div label {
+		margin: 0px 10px 0px 30px;
+	}
 /*	CART MODAL*/
 	.cart-modal {
 		width: 628px;
@@ -818,6 +1177,131 @@
 /*MEDIA MOBILE*/
 
 @media screen and (max-width: 480px) {
+	/*	withdraw modal*/
+	.withdraw-modal {
+		width: 335px;
+		height: 674px;
+	}
+	.withdraw-modal .your-balance {
+		width: 106px;
+		top: 15px;
+	}
+	.withdraw-modal h2 {
+		margin: 80px 0px 0px 0px;
+		font-size: 15px;
+	}
+	.withdraw-modal .your-balance {
+		height: 50px;
+	}
+	.withdraw-modal .your-balance div:nth-child(2) {
+		border-radius: 0px;
+	}
+	.withdraw-modal .your-balance div:nth-child(3) {
+		position: absolute;
+		top: 23px;
+		left: 106px;
+	}
+	.withdraw-modal .payments-text {
+		height: 301px;
+	}
+	.withdraw-modal .payments-text span {
+		font-size: 12px;
+	}
+	.payments-wrapper-text {
+		height: 369px;
+	}
+	.payment-text {
+		width: 104px;
+		font-size: 11px;
+		height: 35px;
+	}
+	.withdraw-modal .sum {
+		height: 130px;
+		flex-direction: column;
+		margin: 0px 0px 20px 0px;
+	}
+	.withdraw-modal .sum div {
+		width: 100%;
+		height: 85px;
+		flex-direction: column;
+	}
+	.withdraw-modal .sum div input[type=text] {
+		width: 100%;
+	}
+	.withdraw-modal .sum .btn {
+		width: 100%;
+	}
+	.withdraw-modal .choose-payment {
+		font-size: 12px;
+		height: 100px;
+		flex-direction: column;
+		margin: 0px 0px -20px 0px;
+	}
+	.withdraw-modal .choose-payment div {
+		height: 80px;
+		width: 100%;
+		flex-direction: column;
+		position: relative;
+	}
+	.withdraw-modal .choose-payment div select {
+		width: 100%;
+	}
+	.withdraw-modal .choose-payment div > span {
+		position: absolute;
+		top: 50px;
+		right: 50px;
+	}
+	.withdraw-modal .choose-payment div label {
+		margin: 0px 110px 5px 0px;
+	}
+/*	refill modal*/
+	.refill-modal {
+		width: 335px;
+		height: 418px;
+	}
+	.refill-modal h2 {
+		font-size: 15px;
+	}
+	.refill-modal .input {
+		width: 90%;
+		margin: 0px;
+		font-size: 12px;
+	}
+	.refill-modal .input input[type=text] {
+		width: 65%;
+		font-size: 12px;
+	}
+	.refill-modal .input:nth-child(3) input[type=text] {
+		width: 50px;
+		margin: 0px 142px 0px 0px;
+	}
+	.refill-modal .input:nth-child(3) span:last-child {
+		margin: 0px 142px 0px 0px;
+	}
+	.refill-modal .tip {
+		width: 76px;
+		top: 80px;
+		right: 15px;
+		font-size: 10px;
+	}
+	.refill-modal .payments {
+		width: 90%;
+		height: 166px;
+		font-size: 12px;
+	}
+	.refill-modal .payments .payments-wrapper {
+		height: 133px;
+	}
+	.payment {
+		width: 78px;
+		height: 28px;
+		margin: 0px 0px 5px 0px;
+	}
+	.refill-modal .btn {
+		width: 90%;
+		padding: 13px 0px;
+		margin: 0px 0px 20px 0px;
+	}
 /*	cart modal*/
 	.cart-modal {
 		width: 335px;
