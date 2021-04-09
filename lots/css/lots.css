@@ -5,7 +5,7 @@
 
 /*SEND SUCCESS*/
 
-.send-success-modal, .money-processing-modal, .ordering-modal, .send-friend-modal {
+.send-success-modal, .money-processing-modal, .ordering-modal, .send-friend-modal, .cart-modal {
 	width: 321px;
 	height: 169px;
 	padding: 10px;
@@ -56,7 +56,7 @@
 	background-color: #34C38D;
 }
 
-.ordering-modal .modal-full-wrapper, .send-friend-modal .modal-full-wrapper {
+.ordering-modal .modal-full-wrapper, .send-friend-modal .modal-full-wrapper, .cart-modal .modal-full-wrapper {
 	justify-content: space-between;
 }
 
@@ -146,6 +146,95 @@
 	font-size: 12px;
 	position: absolute;
 	bottom: 20px;
+}
+
+/*CART MODAL*/
+
+.cart-modal {
+	width: 1014px;
+	height: 532px;
+}
+
+.cart-modal .modal-full-wrapper {
+	justify-content: space-around;
+}
+
+.cart-modal .cart-table {
+	width: 100%;
+	height: 394px;
+	text-align: center;
+	border-spacing: 0px 12px;
+}
+
+.cart-table th {
+	color: #34C38D;
+	font-weight: 400;
+}
+
+.cart-table tr {
+	box-shadow: 0px 0.5px 3px 0px #7a7a7a;
+}
+
+.cart-table tr:hover, .cart-table tr:hover td:nth-child(2), .cart-table tr:hover td:nth-child(5) {
+	background-color: #34C38D;
+	color: #ffffff;
+}
+
+.cart-table tr:first-child {
+	box-shadow: none;
+}
+
+.cart-table tr:first-child:hover {
+	background-color: #ffffff;
+}
+
+.cart-table tr td:nth-child(2), .cart-table tr td:nth-child(5) {
+	color: #5A5A5A;
+}
+
+.cart-table td {
+	font-weight: 300;
+	font-size: 14px;
+}
+
+.cart-modal .bottom-menu {
+	width: 100%;
+	height: 50px;
+	
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.cart-modal .bottom-menu .pager {
+	width: 40%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.cart-modal .bottom-menu .pager svg {
+	cursor: pointer;
+}
+
+.cart-modal .bottom-menu .pager svg:hover path {
+	fill: #34c28d;
+}
+
+.cart-modal .bottom-menu .pager svg:hover g {
+	stroke: #34c28d;
+}
+
+.cart-modal .bottom-menu .type {
+	width: 50%;
+	
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.cart-modal .bottom-menu .type span > span {
+	cursor: pointer;
 }
 
 /*MONEY INTERACTIONS*/
@@ -529,6 +618,24 @@
 /*MEDIA TABLET*/
 
 @media screen and (max-width: 768px) {
+/*	CART MODAL*/
+	.cart-modal {
+		width: 628px;
+	}
+	.cart-table th:nth-child(2), .cart-table th:nth-child(5) {
+		display: none;
+	}
+	.cart-table td:nth-child(2), .cart-table td:nth-child(5) {
+		display: none;
+	}
+	.cart-modal .bottom-menu .pager {
+		width: 20%;
+		font-size: 14px;
+	}
+	.cart-modal .bottom-menu .type {
+		width: 70%;
+		font-size: 14px;
+	}
 /*	MONEY INTERACTION BUTTONS*/
 	.money-interaction {
 		height: 50px;
@@ -711,6 +818,26 @@
 /*MEDIA MOBILE*/
 
 @media screen and (max-width: 480px) {
+/*	cart modal*/
+	.cart-modal {
+		width: 335px;
+		height: 500px;
+	} 
+	.cart-table tr th, .cart-table tr td {
+		font-size: 12px;
+	}
+	.cart-modal .bottom-menu {
+		height: 80px;
+		flex-direction: column;
+	}
+	.cart-modal .bottom-menu .pager {
+		width: 50%;
+		font-size: 12px;
+	}
+	.cart-modal .bottom-menu .type {
+		width: 100%;
+		font-size: 12px;
+	}
 /*	send to a friend*/
 	.send-friend-modal {
 		width: 335px;
