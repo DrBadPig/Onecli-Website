@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Тикеты</title>
+	<link href="../css/main.css" rel="stylesheet">
+	<link href="css/idea.css" rel="stylesheet">
+	<link href="../images/logo.png" rel="icon">
+	<link href="https://fonts.gstatic.com" rel="preconnect">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	
+	<!--HEADER-->
+	<header class="main-header">
+		<!--LOGO CONTAINER-->
+		<div class="main-logo-div">
+			<img class="main-logo" src="../images/logo.png" alt="ONECLI. logo">
+			<img class="main-logo-title" src="../images/logo_title.png" alt="ONECLI. logo">
+		</div>
+		<!--HEADER RIGHT SIDE-->
+		<div class="header-user-info div-flex df-spaceb">
+			<!--USER INFO-->
+			<div class="main-user-info" onClick="onClickUserSubmenu()">
+				<span class="user-header-login t-black">User Login</span>
+				<img class="user-header-image" src="../images/bvadimnikol.jpg" alt="Your image">
+			</div>
+			<!--LANGUAGE CHOOSER-->
+			<div class="language-chooser div-flex df-center" onClick="onClickLanguageChooserMenu()">
+				<img src="../images/country-flags/russia.png" alt="russian">
+			</div>
+			<!--NAVIGATION MENU-->
+			<div id="main-header-menu" class="main-header-menu div-flex df-center" onClick="OpenNavMenu()">
+				<!--CLOSED MENU ICON-->
+				<svg class="menu-icon" id="main-menu-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 19">
+  					<g transform="translate(0 1)">
+ 	   					<line x2="25" fill="none" stroke="#fff" stroke-width="2"/>
+  	 					<line x2="16.349" transform="translate(0 9.067)" fill="none" stroke="#fff" stroke-width="2"/>
+  	  					<line x2="25" transform="translate(0 17)" fill="none" stroke="#fff" stroke-width="2"/>
+  					</g>
+				</svg>
+				<!--OPENED MENU ICON-->
+				<svg class="menu-icon hidden" id="main-menu-svg-active" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25.349 19">
+  					<g transform="translate(0 1)">
+    					<line x2="25" fill="none" stroke="#fff" stroke-width="2"/>
+    					<line x2="16.349" transform="translate(9 9.067)" fill="none" stroke="#fff" stroke-width="2"/>
+    					<line x2="25" transform="translate(0 17)" fill="none" stroke="#fff" stroke-width="2"/>
+  					</g>
+				</svg>
+			</div>
+		</div>
+	</header>
+	
+	<!--USER SETTING SUBMENU-->
+	<div class="user-submenu hidden" id="user_submenu">
+		<ul>
+			<li><a href="../settings/index.html">Аккант</a></li>
+			<li><a href="../settings/index.html">Настройки</a></li>
+			<li><a href="#">На главную</a></li>
+			<li><a href="#">Выход</a></li>
+		</ul>
+	</div>
+	
+	<!--LANGUAGE CHOOSER MENU-->
+	<div class="language-chooser-menu hidden" id="language-chooser-menu">
+		<div><img class="active" src="../images/country-flags/russia.png" alt="russian"></div>
+		<div><img src="../images/country-flags/united-kingdom.png" alt="uk english"></div>
+	</div>
+	
+	<!--NAVIGATION-->
+	
+	<!--MAIN CONTENT-->
+	<main class="main-content">
+	
+	</main>
+	
+	<!--SCRIPTS-->
+	<script src="../scripts/main.js"></script>
+	<script src="idea.js"></script>	
+</body>
+</html>

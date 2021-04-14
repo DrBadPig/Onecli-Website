@@ -42,6 +42,11 @@ input[type=text] {
 	padding: 10px 0px;
 }
 
+::selection {
+	color: #ffffff;
+  	background-color: #4F5A7A;
+}
+
 /*SWITCHER STYLE*/
 .switch {
   	position: relative;
