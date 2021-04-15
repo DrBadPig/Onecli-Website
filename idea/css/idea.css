@@ -52,6 +52,7 @@
 }
 
 .idea-header div span:first-child {
+	text-transform: uppercase;
 	position: absolute;
 	top: -23px;
 	right: 10px;
@@ -123,6 +124,7 @@
 	width: 24%;
 	height: 60px;
 	cursor: pointer;
+	color: #838383;
 	
 	border-radius: 8px;
 	box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
@@ -130,6 +132,7 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	transition-duration: 0.2s;
 }
 
 .idea-menu .menu-point:hover, .idea-menu .active {
@@ -223,6 +226,10 @@
 /*MEDIA TABLET*/
 
 @media screen and (max-width: 768px) {
+	.idea-header h2 {
+		font-size: 20px;
+		letter-spacing: 2px;
+	}
 	.video-section, .webinar-section {
 		height: 346px;
 	}
@@ -247,7 +254,6 @@
 		height: 45px;
 	}
 	.idea-header div span:first-child {
-		text-transform: uppercase;
 		font-size: 10px;
 		top: -16px;
 	}
