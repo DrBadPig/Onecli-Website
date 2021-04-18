@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>FAQ | Вопрос - ответы</title>
 	<link href="../css/main.css" rel="stylesheet">
-	<link href="css/idea.css" rel="stylesheet">
+	<link href="css/faq.css" rel="stylesheet">
 	<link href="../images/logo.png" rel="icon">
 	<link href="https://fonts.gstatic.com" rel="preconnect">
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
@@ -70,14 +70,266 @@
 	</div>
 	
 	<!--NAVIGATION-->
+	<nav class="main-navigation" id="fullNav">
+		<div class="main-navigation-wrapper">
+			<!-- NAVIGATION HEADER -->
+			<div class="nav-header div-flex-two">
+				<span class="t-white">Навигация</span>
+				<img src="../images/menu.png" alt="Menu" onClick="onClickNavigation()">
+			</div>
+			<!-- MENU -->
+			<ul class="menu-list">
+				<li><a href="../investments/index.html"><img src="../images/menu-icons/inv.png" alt="investments">Инвестиции в ONECLI.</a></li>
+				<li><a href="../team/index.html"><img src="../images/menu-icons/team.png" alt="team">Моя команда</a></li>
+				<li><a href="../exchange/index.html"><img src="../images/menu-icons/br.png" alt="exchange">Биржа долей</a></li>
+				<li><a href="../lots/index.html"><img src="../images/menu-icons/lots.png" alt="lots">Лоты <span class="t-notify">[Beta]</span></a></li>
+				<li><a href="../idea/index.html"><img src="../images/menu-icons/idea.png" alt="idea">Идея ONECLI.</a></li>
+				<li><a href="../bounty/index.html"><img src="../images/menu-icons/btn.png" alt="bounty">Bounty кампания</a></li>
+				<li><a href="../promo/index.html"><img src="../images/menu-icons/promo.png" alt="promo">Промоматериалы</a></li>
+				<li class="menu-active"><a href="../faq/index.html"><img src="../images/menu-icons/faq.png" alt="faq">FAQ | Вопрос - ответ</a></li>
+				<li><a href="../game/index.html"><img src="../images/menu-icons/game.png" alt="game">Большая игра ONECLI.</a></li>
+			</ul>
+			<!-- SOCIALS -->
+			<div class="socials">
+				<ul class="socials-list hidden" id="socials-list">
+					<li><a href="https://www.youtube.com/channel/UClxixUM9qzOjoFtUd5RNBzQ"><img src="../images/socials/yt0.png" alt="YT"></a></li>
+					<li><a href="https://www.facebook.com/oneclicom/"><img src="../images/socials/f0.png" alt="FB"></a></li>
+					<li><a href="https://instagram.com/oneclicom"><img src="../images/socials/i0.png" alt="IN"></a></li>
+					<li><a href="https://twitter.com/oneclicom"><img src="../images/socials/tw0.png" alt="TW"></a></li>
+					<li><a href="https://teleg.one/onecli"><img src="../images/socials/t0.png" alt="TG"></a></li>
+					<li><a href="https://vk.com/onecli"><img src="../images/socials/vk0.png" alt="VK"></a></li>
+				</ul>
+				<span class="t-gray t-size-12" id="socials-h1" onClick="onClickSocials()">СОЦИАЛЬНЫЕ СЕТИ</span>
+				<img src="../images/str_left.png" alt="socials" onClick="onClickSocials()">
+			</div>
+			<!-- CRYPTO SECTION -->
+			<div class="crypto-rate-wrapper">
+				<div class="crypto-header div-flex-two">
+					<span class="t-white">Курсы криптовалют</span>
+					<img src="../images/bitcoin.png" alt="crypt">
+				</div>
+				<ul class="crypto-list">
+					<li>BITCOIN (BTC)<br>9531.19 USD (0.45%)</li>
+					<li>ETHEREUM (ETH)<br>209.83 USD (1.18%)</li>
+					<li>RIPPLE (XRP)<br>0.309862 USD (0.10%)</li>
+					<li>ETHEREUM (ETH)<br>209.83 USD (1.18%)</li>
+					<li>BITCOIN CASH (BCH)<br>306.20 USD (0.26%)</li>
+					<li>LITECOIN (LTC)<br>89.13 USD (0.04%)</li>
+					<li>CARDANO (ADA)<br>0.059253 USD (1.35%)</li>
+					<li>EOS (EOS)<br>4.29 USD (-1.51%)</li>
+					<li>STELLAR (XLM)<br>0.083855 USD (0.18%)</li>
+					<li>NEO (NEO)<br>11.39 USD (1.07%)</li>
+					<li>IOTA (MIOTA)<br>0.288540 USD (0.43%)</li>
+					<li>MONERO (XMR)<br>79.88 USD (2.05%)</li>
+					<li>DASH (DASH)<br>111.05 USD (1.23%)</li>
+					<li>TRON (TRX)<br>0.022540 USD (2.60%)</li>
+					<li>NEM (XEM)<br>0.063579 USD (-0.22%)</li>
+					<li>ETHEREUM CLASSIC (ETC)<br>5.95 USD (0.90%)</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
 	
 	<!--MAIN CONTENT-->
 	<main class="main-content">
 	
+		<h1 class="t-main hidden">Идея Onecli.</h1>
+		
+		<div class="main-content-wrapper">
+			
+			<!--MAIN HEADER-->
+			<div class="faq-header">
+				<div>
+					<span class="t-main t-lspacing-2">just one click.</span>
+					<h2 class="t-bold-300 t-white t-uppercase t-lspacing-7">FAQ/</h2>
+					<span class="t-white t-size-14">Ответы на часто задаваемые вопросы</span>
+				</div>
+			</div>
+			
+			<!--QUESTUION BLOCK-->
+			<div class="questions">
+				<h2 class="t-main t-uppercase t-bold-400">Сообщество CryptoArea. Основное</h2>
+				<button class="accordion">Что представляет собой CryptoArea?</button>
+				<div class="panel">
+					<hr>
+					<p>CryptoArea (англ. CryptoArea Community) – это открытое интернет объединение людей, имеющих общие интересы и цели. В частности, сообщество представляет собой группу разработчиков, стартаперов, предпринимателей, инвесторов и просто целеустремленных личностей. Сообщество является свободным для вступления и предоставляет возможности для создания и развития собственных брендов/компаний.</p>
+				</div>
+				<button class="accordion">Кто является основателем сообщества?</button>
+				<div class="panel">
+					<hr>
+					<p>Основателем и идеологом сообщества выступает Воржев Антон Владимирович. С 2008 года основал онлайн команду IT-разработчиков, специализация которой создание финансовых сервисов для банков и инвестиционных компаний, написание торговых роботов для трейдинга на платформе MetaTrade. С 2013 года деятельность связана с инвестированием в фондовый и криптовалютный рынок. В период с 2016 по 2017 заработал 34 биткоина (750 000$) на торговле криптовалютой и стал управляющим трейдером. С 2017 года основал сообщество CryptoArea (CryptoArea Community, www.cryptoarea.com), задачей которого является объединение и развитие людей с разными способностями и возможностями, а также совместное создание различных интернет-проектов, стартапов и сервисов. На данный момент занимается созданием и продвижением стартапа Onecli.</p>
+				</div>
+				<button class="accordion">Какие гарантии предоставляет сообщество?</button>
+				<div class="panel">
+					<hr>
+					<p>Гарантии сообщества заключаются в полной юридической ответственности основателя и соучредителей в рамках правового поля территории регистрации бренда CryptoArea, а также всех проектов, созданных под брендом CryptoArea и имеющих собственный юридический аспект. Кроме того, гарантия порядочности и ответственности заключается в предоставлении персональной информации об основателе и соучредителях, которая находится в свободном доступе на сайте сообщества.</p>
+				</div>
+				<button class="accordion">Какую деятельность ведет сообщество?</button>
+				<div class="panel">
+					<hr>
+					<p>Сообщество CryptoArea является своего рода катализатором полезных инструментов, проектов, продуктов и стартапов. Деятельность заключается в формировании идеи, разработке, создании юридической базы и продвижении/сопровождении вышеописанных платформ под брендом CryptoArea для реализации задумки или выпуска продукта в свет, основываясь на спросе и предложении рынка.</p>
+				</div>
+				<button class="accordion">Имеют ли проекты сообщества юридическую силу?</button>
+				<div class="panel">
+					<hr>
+					<p>Каждый продукт, выпускаемый под брендом CryptoArea полностью соответствует правовому полю той страны, где зарегистрирована данная компания. Страна регистрации может отличаться от местонахождения пользователя, однако это никак не влияет на функционал и потенциальные возможности продуктов.</p>
+				</div>
+				<button class="accordion">Что получают участники сообщества?</button>
+				<div class="panel">
+					<hr>
+					<p>На данный момент интернет-движение CryptoArea работает над следующими направлениями: создание, развитие и разработка бренда Onecli., инвестирование в компанию Onecli. (становление дольщиком), заработок без вложений на Bounty компании Onecli.; заработок на реферальной программе компании Onecli.; предоставление обучающего материала по различным перспективным категориям для реализации собственного бизнеса, а также создания и разработки своих продуктов и сервисов.</p>
+				</div>
+				<button class="accordion">Какое обучение предоставляет CryptoArea?</button>
+				<div class="panel">
+					<hr>
+					<p>Раздел обучающего материала включает в себя обучение на разные темы по бизнесу от топовых интернет-авторов (разработка, дизайн, брендинг, кодинг, smm, seo, копирайтинг, реклама, торговля и многое другое).</p>
+				</div>
+			</div>
+			
+			<!--QUESTUION BLOCK-->
+			<div class="questions">
+				<h2 class="t-main t-uppercase t-bold-400">Сообщество CryptoArea. Взаимодействие с сообществом</h2>
+				<button class="accordion">Как стать участником сообщества?</button>
+				<div class="panel">
+					<hr>
+					<p>Для того, чтобы стать полноценным участником сообщества CryptoArea вам необходимо произвести бесплатную регистрацию, нажав на соответствующую кнопку на сайте сообщества и заполнить необходимые поля. После активации аккаунта вы попадаете в личный кабинет, где сможете управлять своими активами и получаете доступ к инвестиционным и обучающим возможностям.</p>
+				</div>
+				<button class="accordion">С какими платежными системами работает сообщество?</button>
+				<div class="panel">
+					<hr>
+					<p>На данный момент сообщество работает с такими электронными платежными системами как Payeer и AdvCash. Покупка долей стартапа Onecli. осуществляется с помощью Payeer, а вывод партнерских начислений производится на AdvCash. В конце декабря – начале января мы добавим большинство популярных платежных систем для вашего удобства.</p>
+				</div>
+				<button class="accordion">Как получить доступ к обучающим материалам?</button>
+				<div class="panel">
+					<hr>
+					<p>Для того, чтобы получить доступ к обучающим материалам, необходимо перейти в пункт меню "Онлайн обучение" и выбрать соответствующий курс. Всем зарегистрированным участникам сообщества всё обучение на сайте предоставляется абсолютно бесплатно.</p>
+				</div>
+			</div>
+			
+			<!--QUESTUION BLOCK-->
+			<div class="questions">
+				<h2 class="t-main t-uppercase t-bold-400">Onecli. www.onecli.com</h2>
+				<button class="accordion">Что такое Onecli.?</button>
+				<div class="panel">
+					<hr>
+					<p>Onecli. — многофункциональная мультивалютная финансовая платформа, которая предоставляет пользователю три сервиса: обратный валютный аукцион (Onecli.Auction), P2P биржа (Onecli.Exchange), нетворкинг (Onecli.Network). Благодаря платформе Onecli. и её трем сервисам Вы сможете покупать различную валюту / криптовалюту дешевле реальной рыночной стоимости (!), совершать обменные операции без комиссий и посредников, а также сможете начать свой высокодоходный бизнес.</p>
+				</div>
+				<button class="accordion">Какие три сервиса входят в состав платформы?</button>
+				<div class="panel">
+					<hr>
+					<p>Onecli.Auction: Суть сервиса: продажа различной валюты / криптовалюты дешевле её реальной стоимости. Другими словами - продажа разницы денежной единицы, т.е. прибыли. Участвуя в торгах на сайте Onecli можно сразу же покупать прибыль всего в один клик. Это первый сервис в мире по генерации прибыли, использующий модель обратного аукциона.<br><br>Onecli.Exchange: Благодаря данному сервису можно будет обменивать, покупать или продавать интересующую валюту / криптовалюту с наименьшими или нулевыми комиссиями напрямую у пользователей платформы. Onecli.Exchange будет выступать в качестве гаранта среди участников обмена и автоматически контролировать безопасность каждой сделки.<br><br>Onecli.Network: Данный сервис предоставляет всем пользователям платформы Onecli начать свою предпринимательскую деятельность на основе модели сетевого маркетинга и зарабатывать определенный процент прибыли с каждого клика или каждого успешного обмена.</p>
+				</div>
+				<button class="accordion">Как я могу заработать на начальных этапах разработки?</button>
+				<div class="panel">
+					<hr>
+					<p>Инвестирование в стартап + реферальная программа. Вы сможете купить доли (акции) уникального стартапа Onecli и получать с созданной компании постоянно растущую прибыль, а также получать до 15% дохода с каждой проданной доли по вашей реферальной ссылке.</p>
+				</div>
+				<button class="accordion">Имеет ли стартап юридическую силу?</button>
+				<div class="panel">
+					<hr>
+					<p>Компания Onecli. является официально зарегистрированной в Великобритании. Ссылка на данные о регистрации: <a href="https://beta.companieshouse.gov.uk/company/11780680">https://beta.companieshouse.gov.uk/company/11780680</a></p>
+				</div>
+				<button class="accordion">Как заработать на сервисе Onecli.Auction?</button>
+				<div class="panel">
+					<hr>
+					<p>Для более подробного изучения сути идеи обратного валютного аукциона и способов заработка на нем, рекомендуем перейти по ссылке: <a href="https://cryptoarea.com/lc/onecli_startup/#auction">https://cryptoarea.com/lc/onecli_startup/#auction</a></p>
+				</div>
+				<button class="accordion">Как заработать на сервисе Onecli.Exchange?</button>
+				<div class="panel">
+					<hr>
+					<p>Для того, чтобы понять каким образом каждый пользователь сможет заработать на P2P обменнике, рекомендуем перейти по ссылке: <a href="https://cryptoarea.com/lc/onecli_startup/#exchange">https://cryptoarea.com/lc/onecli_startup/#exchange</a></p>
+				</div>
+				<button class="accordion">Как заработать на сервисе Onecli.Network?</button>
+				<div class="panel">
+					<hr>
+					<p>Чтобы узнать возможности заработка Network сервиса, рекомендуем перейти по ссылке: <a href="https://cryptoarea.com/lc/onecli_startup/#network">https://cryptoarea.com/lc/onecli_startup/#network</a></p>
+				</div>
+			</div>
+			
+			<!--QUESTUION BLOCK-->
+			<div class="questions">
+				<h2 class="t-main t-uppercase t-bold-400">Инвестиции в Onecli.</h2>
+				<button class="accordion">Как приобрести доли стартапа Onecli.?</button>
+				<div class="panel">
+					<hr>
+					<p>Для того, чтобы стать полноправным дольщиком стартапа достаточно пройти регистрацию на сайте компании Onecli. и перейти в личный кабинет. Далее, перейдя в пункт меню <a href="https://cryptoarea.com/lc/onecli_invest/">«Инвестиции в Onecli.»</a> или <a href="https://cryptoarea.com/lc/plans/">«Баланс | Тарифы»</a>, которые располагаются в левом блоке, вы найдете блок «Инвестировать / Купить доли Onecli.». Данный блок позволит вам купить определённое количество долей или же ввести свою сумму, которую вы готовы инвестировать и стать официальным дольщиком стартапа Onecli.</p>
+				</div>
+				<button class="accordion">Какое количество долей стартапа я могу приобрести?</button>
+				<div class="panel">
+					<hr>
+					<p>На первом этапе покупке долей, стартап подразумевает распродажу 10% долей от общего количества, что подразумевает 10 000 000 долей. На данном этапе вы можете приобрести любое количество долей в промежутке от 10 (1.10$) до 1 000 000 (110 000$) долей. На данный момент цена одной доли составляет 0.109410186$. Цена доли растет с каждой новой инвестицией, чем больше спрос на доли - тем выше цена.</p>
+				</div>
+				<button class="accordion">Как я могу заработать на начальных этапах разработки?</button>
+				<div class="panel">
+					<hr>
+					<p>Инвестирование в стартап + реферальная программа. Вы сможете купить доли (акции) уникального стартапа Onecli и получать с созданной компании постоянно растущую прибыль, а также получать до 15% дохода с каждой проданной доли по вашей реферальной ссылке.</p>
+				</div>
+				<button class="accordion">Сколько я смогу заработать на долях стартапа?</button>
+				<div class="panel">
+					<hr>
+					<p>В зависимости от количества купленных долей, вы сможете получать ежемесячный доход в размере от 0.001% до 1% от чистой прибыли компании Onecli. Этот доход будет зависеть от общего оборота компании "ONECLI LTD" с каждого сервиса. </p>
+				</div>
+				<button class="accordion">Как я могу получить доли Onecli. бесплатно?</button>
+				<div class="panel">
+					<hr>
+					<p>Чтобы получить определенное количество долей Onecli. бесплатно, вам необходимо участвовать в Bounty кампании Onecli. Все доступные задания располагаются в нашем Telegram боте. Ссылка для использования бота: <a href="https://teleg.one/oneclibot">https://teleg.one/oneclibot</a></p>
+				</div>
+				<button class="accordion">Что такое Bounty кампания Onecli.?</button>
+				<div class="panel">
+					<hr>
+					<p>Bounty / Баунти - это способ зарабатывать бесплатные доли стартапа Onecli. без вложений своих личных средств, затратив лишь время на выполнение определенных действий/заданий, направленных на продвижение нашего стартапа или на привлечение инвестиций. Все доступные задания располагаются в нашем Telegram боте. Ссылка для использования бота: <a href="https://teleg.one/oneclibot">https://teleg.one/oneclibot</a></p>
+				</div>
+				<button class="accordion">Когда я могу продать часть или все доли стартапа?</button>
+				<div class="panel">
+					<hr>
+					<p>Возможность официальной продажи долей у дольщиков появится после запуска биржи долей Onecli., информация о которой будет опубликована во всех официальных источниках.</p>
+				</div>
+				<button class="accordion">С какой периодичностью будут происходить начисления прибыли компании дольщикам?</button>
+				<div class="panel">
+					<hr>
+					<p>Начисление прибыли дольщикам будет происходить раз в месяц, которая в дальнейшем будет отображаться у вас в личном кабинете в соответствующем разделе на сайте компании Onecli.</p>
+				</div>
+			</div>
+			
+			<div class="questions">
+				<h2 class="t-main t-uppercase t-bold-400">Реферальная программа Onecli.</h2>
+				<button class="accordion">Какой % партнерских начислений я буду получать от приведенных мною инвестиций?</button>
+				<div class="panel">
+					<hr>
+					<p>Если инвестор пришел на сайт по партнерской ссылке и купил определенную часть долей, участнику сразу же поступит на баланс процент (%) прибыли от купленных долей инвестора. Реферальная программа инвестиционного проекта Onecli. имеет 10 уровней в глубину, а именно 5%, 3%, 2%, 1%, 1%, 1%, 0.5%, 0.5%, 0.5%, 0.5% Итого: 15% прибыль со всех 10 уровней вашей команды.<br><br>Кроме того, по мере развития вашей структуры, вы будете достигать новые левелы (lvl), которые позволят вам открывать новую глубину партнерской программы и получать подарки после достижения определенных условий.<br><br>Более подробную информацию об условиях, левелах и доступных уровнях вы можете изучить на главной странице сайта <a href="https://onecli.com/">https://onecli.com/</a> в блоке «Партнерская программа».</p>
+				</div>
+			</div>
+			
+			<div class="questions">
+				<h2 class="t-main t-uppercase t-bold-400">CryptoArea &#38; Onecli.: Безопасность</h2>
+				<button class="accordion">Могу ли я иметь несколько личных кабинетов?</button>
+				<div class="panel">
+					<hr>
+					<p>Наличие нескольких аккаунтов строго запрещено. Если же вы заводите аккаунт не для себя, а скажем, для члена вашей семьи (с одного IP адреса), просим обязательно обратиться в техническую поддержку по адресу <a href="mailto:support@onecli.com">support@onecli.com</a> с пометкой «Мультиаккаунт».</p>
+				</div>
+				<button class="accordion">На сколько безопасен сайт сообщества и данные моего личного кабинета?</button>
+				<div class="panel">
+					<hr>
+					<p>Домены <a href="www.onecli.com">www.onecli.com</a> и  <a href="www.cryptoarea.com">www.cryptoarea.com</a> оснащены SSL сертификатом COMODO (Green Bar), что подтверждает подлинность сайтов, а также защищает обмен данными между вашим компьютером и нашими серверами. Помимо всего, мы защищены от любого вида DDoS атак с круглосуточной технической поддержкой.</p>
+				</div>
+				<button class="accordion">Что делать, если я забыл пароль от личного кабинета?</button>
+				<div class="panel">
+					<hr>
+					<p>Если вы забыли пароль от личного кабинета, вы всегда можете восстановить его на странице авторизации, которая располагается по ссылке: <a href="https://onecli.com/ru/site/index/?type=login">https://onecli.com/ru/site/index/?type=login</a>. Для того, чтобы восстановить пароль, нажмите на «Забыли пароль?» и следуйте дальнейшим инструкциям.</p>
+				</div>
+				<button class="accordion">Как мне изменить данные от своего личного кабинета?</button>
+				<div class="panel">
+					<hr>
+					<p>Если вы хотите изменить пароль - вы можете сделать это в настройках аккаунта, нажав на черную иконку, которая находится в верхнем правом углу личного кабинета, после этого кликните на пункт «Настройки». Чтобы изменить Email или платежные реквизиты для вывода средств, просим обращаться на официальный электронный адрес технической поддержки: <a href="mailto:support@onecli.com">support@onecli.com</a>. Это сделано для дополнительной безопасности вашего аккаунта. Смена данных через техническую поддержку происходит в течение 24 часов с момента рассмотрения заявки.</p>
+				</div>
+			</div>
+			
+		</div>
+		
 	</main>
 	
 	<!--SCRIPTS-->
 	<script src="../scripts/main.js"></script>
-	<script src="idea.js"></script>	
+	<script src="faq.js"></script>	
 </body>
 </html>
