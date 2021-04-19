@@ -753,10 +753,6 @@ option:last-child {
   	cursor: not-allowed;
 }
 
-.hidden {
-	display: none;
-}
-
 /*FLEXIBLE DIV*/
 
 .div-flex {
@@ -808,6 +804,10 @@ option:last-child {
 	.main-header-menu {
 		display: none;
 	}
+}
+
+.hidden {
+	display: none;
 }
 
 /*MEDIA 1024*/
