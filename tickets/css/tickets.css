@@ -1,6 +1,237 @@
 @charset "utf-8";
 /* CSS Document */
 
+/*MODALS*/
+
+.create-modal {
+	text-align: center;
+	color: #ffffff;
+	position: relative;
+	
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.create-modal-wrapper {
+	width: 832px;
+	text-align: left;
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.tickets-settigns {
+	width: calc(386px - 20px);
+	height: calc(367px - 20px);
+	padding: 20px;
+	background-color: #ffffff;
+	border-radius: 8px;
+	
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+.tickets-settigns h2 {
+	margin: 0px;
+}
+
+.tickets-settigns input[type=text] {
+	height: 31px;
+	background-color: #f3f5f9;
+	font-size: 14px;
+	margin: 0px -20px;
+	padding: 0px 20px;
+	border-bottom: none;
+}
+
+.related-order {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.related-order {
+	color: #000000;
+	font-size: 14px;
+}
+
+.related-order span, .priority span {
+	font-size: 12px;
+	color: #000000;
+	margin: 0px 0px 5px 0px;
+}
+
+.related-order select {
+	margin: 0px -20px;
+	padding: 5px 17px;
+	background-color: #34C38D;
+	border-radius: 0px;
+	outline: none;
+	border: none;
+}
+
+.priority {
+	width: 100%;
+	height: 176px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.priority-wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.priority-wrapper div {
+	width: 48%;
+	height: 68px;
+	border-radius: 8px;
+	margin: 10px 0px 5px 0px;
+	cursor: pointer;
+	
+	position: relative;
+	
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 12px;
+}
+
+.priority-wrapper div span {
+	color: #ffffff;
+}
+
+.priority-wrapper div svg {
+	position: absolute;
+	top: 5px;
+	right: 5px;
+}
+
+.priority-wrapper .standart {
+	background: url(../images/standart-bg.png) 100% no-repeat, #34c28d;
+	background-position: center;
+}
+
+.priority-wrapper .non-urgent {
+	background: url(../images/non-urgent-bg.png) 100% no-repeat, #4f5a7b;
+	background-position: center;
+}
+
+.priority-wrapper .important {
+	background: url(../images/important-bg.png) 100% no-repeat, #8b99c2;
+	background-position: center;
+}
+
+.priority-wrapper .urgent {
+	background: url(../images/urgent-bg.png) 100% no-repeat, #f5ae44;
+	background-position: center;
+}
+
+.second-section {
+	width: 406px;
+	height: 387px;
+	margin: 0px 0px 0px 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.second-section .text-area {
+	height: calc(182px - 40px);
+	box-shadow: none;
+	text-align: left;
+	padding: 20px;
+}
+
+.second-section .attachments {
+	width: 100%;
+	height: 182px;
+	background-color: #ffffff;
+	border-radius: 8px;
+}
+
+.second-section .attachments > p {
+    font-size: 12px;
+    color: #888888;
+    text-align: center;
+    padding: 10px;
+}
+
+.second-section .attachments div {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.second-section .attachments div div:first-child {
+    width: calc(100% - 113px);
+    height: calc(100% - 10px);
+    padding: 10px 0px 0px 20px;
+    display: block;
+    background-color: #ffffff;
+    overflow: auto;
+    text-align: left;
+	border-radius: 8px 0px 0px 8px;
+}
+
+.second-section .attachments div div:first-child p {
+    font-size: 12px;
+    margin: 0px;
+    color: #888888;
+}
+
+.second-section .attachments div div:last-child {
+    width: 123px;
+    height: 100%;
+    text-align: center;
+    background-color: #f3f5f4;
+    cursor: pointer;
+	border-radius: 0px 8px 8px 0px;
+}
+
+
+.second-section .attachments div div:last-child span:last-child {
+	color: #000000;
+}
+
+.create-modal-wrapper .btn {
+	width: 100%;
+	margin: 20px 0px 0px 0px;
+}
+
+/*PHOTO MODAL*/
+
+.photo-modal {
+	width: 80%;
+	height: 80%;
+	text-align: center;
+	color: #ffffff;
+	position: relative;
+	
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.photo-modal p, .create-modal p {
+	margin: 20px;
+	font-size: 14px;
+	cursor: default;
+}
+
+.photo-modal img {
+	max-width: 100%;
+	max-height: 100%;
+	outline: 2px solid #ffffff;
+}
+
 /*BUTTONS*/
 
 .ticket-btns {
@@ -369,7 +600,63 @@
 /*MEDIA 1024*/
 
 @media screen and (max-width: 1024px)  {
-	
+	.photo-modal {
+		flex-direction: column;
+	}
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1110px) {
+	.create-modal-wrapper {
+		width: calc(459px - 20px);
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-between;
+	}
+	.tickets-settigns {
+		width: calc(100% - 40px);
+	}
+	.second-section .text-area {
+		width: calc(100% - 40px);
+		height: 81px;
+	}
+	.second-section .attachments {
+		height: 121px;
+	}
+	.second-section {
+		width: 100%;
+		height: 252px;
+		margin: 10px 0px 0px 0px;
+	}
+	.create-modal-wrapper .btn {
+		margin: 10px 0px 0px 0px;
+	}
+}
+
+@media screen and (max-width: 860px) {
+	.create-modal-wrapper {
+		width: calc(459px - 20px);
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-between;
+	}
+	.tickets-settigns {
+		width: calc(100% - 40px);
+	}
+	.second-section .text-area {
+		width: calc(100% - 40px);
+		height: 81px;
+	}
+	.second-section .attachments {
+		height: 121px;
+	}
+	.second-section {
+		width: 100%;
+		height: 252px;
+		margin: 10px 0px 0px 0px;
+	}
+	.create-modal-wrapper .btn {
+		margin: 10px 0px 0px 0px;
+	}
 }
 
 /*MEDIA TABLET*/
@@ -510,5 +797,26 @@
 	
 	.ticket-chat .chat .mes h3, .ticket-chat .chat .mes .date, .ticket-chat .chat .mes p, .ticket-chat .footer .text .text-area, .ticket-chat .footer .attachments div div:first-child p, .ticket-chat .footer .attachments div div:last-child span:last-child, .ticket {
 		font-size: 10px;
+	}
+	.photo-modal p {
+		font-size: 10px;
+	}
+	
+/*	MODAL CREATE*/
+	
+	.create-modal-wrapper {
+		width: calc(335px - 20px);
+	}
+	.tickets-settigns h2, .tickets-settigns input[type=text], .related-order select {
+		font-size: 12px;
+	}
+	.second-section .text-area {
+		font-size: 11px;
+	}
+	.related-order span, .priority span, .second-section .attachments div div:last-child span:last-child {
+		font-size: 10px;
+	}
+	.second-section .attachments div div:first-child p {
+		font-size: 9px;
 	}
 }
