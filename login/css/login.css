@@ -1,0 +1,83 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	margin: 0px;
+}
+
+.back {
+	position: fixed;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	background: url(../images/left-bg.png) no-repeat, url(../images/right-bg.png) no-repeat, #ffffff;
+	background-position: left, right;
+	
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.authorize, .info {
+	width: 280px;
+	height: 320px;
+	margin: 30px 0px 0px 0px;
+	display: flex;
+	justify-content: space-around;
+	flex-direction: column;
+	text-align: center;
+	align-items: center;
+}
+
+.authorize input[type=text] {
+	width: 100%;
+	background-color: transparent;
+	border-bottom: 2px solid #34C38D;
+}
+
+.authorize a, .info a, .authorize input[type=text]:focus {
+	color: #34C38D;
+}
+
+.authorize span, .info p {
+	color: #83858C;
+}
+
+.info {
+	height: auto;
+	margin: 0px 0px 30px 0px;
+	justify-content: center;
+}
+
+.info p {
+	font-size: 14px;
+}
+
+/*MEDIA*/
+
+/*MEDIA 1024*/
+
+@media screen and (max-width: 1024px)  {
+	.back {
+		background-size: 30%;
+		justify-content: center;
+	}
+	.authorize, .info {
+		margin: 30px 0px;
+	}
+}
+
+/*MEDIA TABLET*/
+
+/*MEDIA MOBILE*/
+
+@media screen and (max-width: 480px) {
+	.back {
+		background: #ffffff;
+	}
+	.authorize input[type=text], .authorize span, .info p, .authorize a {
+		font-size: 12px;
+	}
+}
