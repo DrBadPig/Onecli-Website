@@ -382,6 +382,10 @@
 }
 .shares-info .light-green {
 	background-image: url(../images/lightgreen-bg.png);
+	cursor: pointer;
+}
+.shares-info .light-green:hover {
+	box-shadow: 0px 0px 10px rgba(52, 194, 141, 1);
 }
 .shares-info .gray {
 	background-image: url(../images/gray-bg.png);
