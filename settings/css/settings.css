@@ -103,6 +103,8 @@
 	flex-direction: column;
 	align-items: center;
 	justify-content: space-between;
+	
+	position: relative;
 }
 
 .profile-info-wrapper .btn, .account-info .btn {
@@ -147,6 +149,20 @@
 
 .photo-section .user-login svg:hover #change_decor {
 	fill: #34c28d;
+}
+
+.photo-disclaimer {
+	position: absolute; 
+	top: 0px; 
+	width: 100%;
+	height: 30px;
+}
+
+.photo-disclaimer p {
+	margin: 0px;
+	font-size: 14px;
+	text-align: center;
+	color: #656770;
 }
 
 .user-about-section {
