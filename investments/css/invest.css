@@ -346,6 +346,38 @@
 	background-size: auto;
 }
 
+/*MODAL REFUSE REASON*/
+
+.modal-refuse {
+	width: calc(100% - 40px);
+	height: 100%;
+	position: relative;
+	
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.modal-refuse h3 {
+	margin: 0px 0px 20px 0px;
+}
+
+.modal-refuse h4 {
+	margin: 0px 0px 10px 0px;
+}
+
+.modal-refuse p {
+	margin: 0px 0px 0px 10px;
+}
+
+.modal-refuse .reason {
+	width: 100%;
+	height: auto;
+	background-color: #ff7a5e;
+	padding: 15px 20px;
+}
+
 /* SHARES INFO */
 
 .shares-info {
@@ -1842,5 +1874,18 @@
 	}
 	.tag {
 		font-size: 10px;
+	}
+	/*MODAL REFUSE REASON*/
+	.modal-refuse h3 {
+		margin: 0px 0px 15px 0px;
+		font-size: 26px;
+	}
+	.modal-refuse h4 {
+		font-size: 12px;
+		margin: 0px 0px 5px 0px;
+	}
+	.modal-refuse p {
+		font-size: 10px;
+		margin: 0px 0px 0px 5px;
 	}
 }

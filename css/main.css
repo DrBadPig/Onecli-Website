@@ -305,6 +305,23 @@ option:last-child {
 	border-radius: 30px;
 }
 
+/*MODAL CLOSE BUTTON TOP*/
+
+.modal-close-button-top {
+	position: absolute;
+	top: 20px;
+	left: calc(50% - 26px);
+	cursor: pointer;
+}
+
+.modal-close-button-top .close-button-top-circle {
+	display: none;
+}
+
+.modal-close-button-top:hover .close-button-top-circle {
+	display: inline;
+}
+
 /*LANGUAGE CHOOSER*/
 
 .language-chooser {
@@ -682,6 +699,10 @@ option:last-child {
 
 .t-size-28 {
 	font-size: 28px;
+}
+
+.t-size-40 {
+	font-size: 40px;
 }
 
 .t-gray {
