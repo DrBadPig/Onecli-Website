@@ -628,7 +628,8 @@ option:last-child {
 
 .main-content {
 	width: auto;
-	overflow: auto;
+	overflow-y: auto;
+	overflow-x: hidden;
 	
 	position: fixed;
 	bottom: 0px;
