@@ -20,9 +20,13 @@ body {
 	align-items: center;
 }
 
+h1 {
+	margin: 0px;
+}
+
 .authorize, .info {
 	width: 280px;
-	height: 340px;
+	height: 440px;
 	margin: 30px 0px 0px 0px;
 	display: flex;
 	justify-content: space-around;
@@ -31,13 +35,18 @@ body {
 	align-items: center;
 }
 
-.authorize input[type=text] {
+.authorize input[type=text], .authorize input[type=password], .authorize input[type=tel] {
 	width: 100%;
 	background-color: transparent;
+	border: none;
+	outline: 0px;
+	font-size: 16px;
+	color: #83858c;
+	padding: 10px 0px;
 	border-bottom: 2px solid #34C38D;
 }
 
-.authorize a, .info a, .authorize input[type=text]:focus {
+.authorize a, .info a, .authorize input[type=text]:focus, .authorize input[type=password]:focus, .authorize input[type=tel]:focus {
 	color: #34C38D;
 }
 
@@ -47,7 +56,7 @@ body {
 
 .authorize-form {
 	width: 100%;
-	height: 200px;
+	height: 299px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -98,7 +107,7 @@ body {
 	.back {
 		background: #ffffff;
 	}
-	.authorize input[type=text], .authorize span, .info p, .authorize a, .auth-btn {
+	.authorize input[type=text], .authorize input[type=password], .authorize input[type=tel], .authorize span, .info p, .authorize a, .auth-btn {
 		font-size: 12px;
 	}
 }

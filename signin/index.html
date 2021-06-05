@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Авторизация</title>
+	<title>Регистрация</title>
 	<link href="../css/main.css" rel="stylesheet">
 	<link href="css/signin.css" rel="stylesheet">
 	<link href="../images/logo.png" rel="icon">
@@ -15,13 +15,19 @@
 	<div class="back">
 		<div class="authorize">
 			<img src="images/logo-sm.png" alt="logo" width="143px">
+<!--			<h1 class="t-main t-size-25 t-bold-400">Регистрация</h1>-->
 			<form class="authorize-form">
 				<input type="text" placeholder="Логин">
-				<input type="text" placeholder="Пароль">
-				<a href="#">Забыли пароль?</a>
-				<span>Впервые здесь? <a href="../signin/index.html">Зарегистрируйтесь</a></span>
+				<input type="text" placeholder="Логин">
+				<input type="password" placeholder="Пароль">
+				<input type="password" placeholder="Повтор пароля">
+				<input type="tel" placeholder="Телефон">
+				<span>Уже есть аккаунт? <a href="../login/index.html">Войдите</a></span>
 				<button class="btn auth-btn">Войти</button>
 			</form>
+		</div>
+		<div class="info">
+			<p>Вы находитесь в демо версии кабинета. Находите и фиксируйте баги и ошибки скриншотом, после чего с описанием отправляйте факт ошибки в наш телеграм чат <a href="https://t.me/onecli_fix">@onecli_fix</a></p>
 		</div>
 	</div>
 </body>
