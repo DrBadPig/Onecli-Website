@@ -31,18 +31,13 @@ body {
 	align-items: center;
 }
 
-.authorize input[type=text], .authorize input[type=password] {
+.authorize input[type=text] {
 	width: 100%;
 	background-color: transparent;
-	border: none;
-	outline: 0px;
-	font-size: 16px;
-	color: #83858c;
-	padding: 10px 0px;
 	border-bottom: 2px solid #34C38D;
 }
 
-.authorize a, .info a, .authorize input[type=text]:focus, .authorize input[type=password]:focus {
+.authorize a, .info a, .authorize input[type=text]:focus {
 	color: #34C38D;
 }
 
@@ -103,7 +98,7 @@ body {
 	.back {
 		background: #ffffff;
 	}
-	.authorize input[type=text], .authorize input[type=password], .authorize span, .info p, .authorize a, .auth-btn {
+	.authorize input[type=text], .authorize span, .info p, .authorize a, .auth-btn {
 		font-size: 12px;
 	}
 }
