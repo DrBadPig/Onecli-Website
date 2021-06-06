@@ -701,7 +701,6 @@
 }
 
 .become-shareholder-wrapper .bs-image {
-	background-image: url(../images/bs-basic.jpg);
 	background-position: center;
 	background-size: cover;
 	width: 273px;
@@ -850,7 +849,7 @@
 
 .afiliate-programm-block .link-block .btn {
 	border-radius: 8px 0px 0px 8px;
-	width: 250px;
+	width: 170px;
 	margin: 0px -20px;
 }
 
