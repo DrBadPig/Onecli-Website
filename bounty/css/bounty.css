@@ -87,17 +87,19 @@
 	height: 440px;
 	border-radius: 8px;
 	box-shadow: -1px 3px 9px 0px #a6a6a6;
-	background: url(../images/bounty-bg.png) 100% no-repeat;
-	background-position: center;
-	background-size: cover;
 	margin: 20px 0px;
 	
+	background: url(../images/bounty-bg.jpg) 100% no-repeat;
+	background-position: center;
+	background-size: cover;
+	
 	text-align: center;
-	position: relative;
 	
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	
+	position: relative;
 }
 
 .image-header img {
@@ -108,7 +110,7 @@
 
 .image-header h1 {
 	font-size: 20px;
-	background-color: rgba(99, 108, 136, 0.8);
+	background-color: rgba(99, 108, 136, 1);
 	width: 100%;
 	margin: 0px;
 	padding: 15px 0px;
@@ -191,15 +193,14 @@
 	width: 90%;
 	margin: 20px 0px;
 	
-	text-align: center;
 	display: flex;
 	flex-direction: column;
-	align-items: center;
 	justify-content: flex-start;
 }
 
 .rules-section h2 {
 	margin: 0px 0px 10px 0px;
+	text-align: center;
 }
 
 .rules-section p {
@@ -220,7 +221,7 @@
 	box-shadow: -1px 3px 9px 0px #a6a6a6;
 }
 
-.rules-section p a {
+.rules-section a {
 	color: #34C38D;
 }
 
@@ -233,7 +234,7 @@
 
 .bounty-menu {
 	width: 100%;
-	height: 226px;
+	margin: -20px 0px 0px 0px;
 	text-align: center;
 	
 	display: flex;
@@ -271,7 +272,7 @@
 .bounty-content {
 	width: 100%;
 	margin: 20px 0px;
-	text-align: center;
+	text-align: left;
 	
 	display: flex;
 	flex-direction: column;
@@ -368,7 +369,7 @@
 
 .support-section {
 	width: 90%;
-	margin: 20px 0px;
+	margin: 0px 0px 20px 0px;
 	text-align: center;
 }
 
