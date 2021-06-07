@@ -44,11 +44,6 @@ function onClickUserSubmenu() {
 	let user_submenu = document.getElementById('user_submenu').classList.toggle('hidden');
 }
 
-// OPEN / CLOSE LANGUAGE CHOOSER MENU
-function onClickLanguageChooserMenu() {
-	let lang_chooser = document.getElementById('language-chooser-menu').classList.toggle('hidden');
-}
-
 //OPEN CLOSE LIVESTATS
 function OpenStatsMenu() {
 	let stats = document.getElementById('live-stats').setAttribute("style", "display: flex;");
@@ -59,4 +54,97 @@ function OpenStatsMenu() {
 function OpenSearchMenu() {
 	let search = document.getElementById('search-wrapper').setAttribute("style", "display: flex;");
 	let stats = document.getElementById('live-stats').setAttribute("style", "display: none;");
+}
+
+// OPEN / CLOSE LANGUAGE CHOOSER MENU
+function onClickLanguageChooserMenu() {
+	let lang_chooser = document.getElementById('language-chooser-menu').classList.toggle('hidden');
+}
+function setLng(str){
+  if(str == "ru"){
+	$("#curLng").attr('src', "images/country-flags/russia.png");
+  }else{
+	$("#curLng").attr('src', "images/country-flags/united-kingdom.png");
+  }
+  let lang_chooser = document.getElementById('language-chooser-menu').classList.toggle('hidden');
+}
+
+//DOLLARS
+function moveFC(){
+    $("#cursecr").animate({
+      "top": "49px"
+    }, 500);
+	
+    $(".crypto-header").animate({
+      backgroundColor:'#34C28D'
+    }, 500);
+    $(".nav-header").animate({
+      backgroundColor:'#4F5A7B'
+    }, 500);
+}
+function moveF(){
+    $("#cursecr").animate({
+      "top": st
+    }, {duration:500, complete:function(){$("#cursecr").css({ top:("")}); } });
+	
+    $(".crypto-header").animate({
+      backgroundColor:'#4F5A7B'
+    }, 500);
+    $(".nav-header").animate({
+      backgroundColor:'#34C28D'
+    }, 500);
+}
+
+
+// SOCAILS
+let socStatus = 0;
+function onClickSocials() {
+  if(socStatus == 1){
+    $("#socials-list").animate({
+      "right": "-190px"
+    }, 500);
+	
+    $("#socials-h1").animate({
+      "opacity": "1"
+    }, 500);
+	
+	socStatus = 0;
+  }else{
+    $("#socials-list").animate({
+      "right": "35px"
+    }, 1000);
+	
+    $("#socials-h1").animate({
+      "opacity": "0"
+    }, 500);
+  
+	socStatus = 1;
+  }
+}
+
+
+function chg(str){
+  if(document.getElementById("soc_"+str).src == "https://onecli.biz/img/"+str+"0.png"){
+    document.getElementById("soc_"+str).src = "img/"+str+"1.png";
+  }
+}
+function chg_(str){
+  if(document.getElementById("soc_"+str).src == "https://onecli.biz/img/"+str+"1.png"){
+    document.getElementById("soc_"+str).src = "img/"+str+"0.png";
+  }
+}
+
+
+
+///СЃРѕРѕР±С‰РµРЅРёСЏ
+function openF(title, mess){
+  document.getElementById("global_alert").style.display=null;
+  document.getElementById("global_alert_title").innerHTML = title;
+  document.getElementById("global_alert_message").innerHTML = mess;
+}
+
+
+///Р·Р°РєСЂС‹С‚СЊ СЃРѕРѕР±С‰РµРЅРёСЏ
+function alertClose(){
+  document.getElementById("global_alert").style.display="none";
 }
