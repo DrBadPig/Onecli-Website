@@ -12,7 +12,26 @@ function ActivateNavMenu() {
 	nav_menu.classList.toggle("active-back");
 	nav_svg.classList.toggle("hidden");
 	nav_svg_a.classList.toggle("hidden");
+	
+	let nav = document.getElementById("fullNav");
+	nav.classList.toggle("hidden");
 }
+
+function changeStyle()	{
+    if	(window.innerWidth<=1024)	{
+		if (!(document.getElementById("main-header-menu").classList.contains("active-back"))) {
+			console.log("wwwww");
+//			document.getElementById("fullNav").style = "display: none;";
+			document.getElementById("fullNav").classList.add("hidden");
+		}
+	}
+	if	(window.innerWidth>1024) {
+		document.getElementById("fullNav").classList.remove("hidden");
+	}
+}  
+
+window.onresize=changeStyle;
+window.onload=changeStyle;
 
 // OPEN / CLOSE SOCAILS
 function onClickSocials() {
