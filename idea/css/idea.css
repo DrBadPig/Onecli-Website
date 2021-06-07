@@ -75,7 +75,6 @@
 
 .welcome-section {
 	width: 80%;
-	height: 324px;
 	margin: 20px 0px;
 	text-align: center;
 	
@@ -125,6 +124,8 @@
 	height: 60px;
 	cursor: pointer;
 	color: #838383;
+	
+	text-align: center;
 	
 	border-radius: 8px;
 	box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
@@ -206,6 +207,7 @@
 
 .idea-section .btn {
 	margin: 15px 0px 0px 0px;
+	width: 100%;
 }
 
 /*MEDIA*/
