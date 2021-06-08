@@ -9,10 +9,11 @@
 	
 	border-radius: 8px;
 	box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+	padding: 20px 0px 0px 0px;
 }
 
 .materials-storage h2 {
-	margin: 20px 0px 20px 0px;
+	margin: 0px 0px 20px 0px;
 	font-size: 20px;
 }
 
@@ -153,7 +154,7 @@
 	}
 	.materials-storage h2 {
 		font-size: 14px;
-		margin: 30px 0px 0px 0px;
+		margin: 0px 0px 0px 0px;
 	}
 	.materials-storage .chooser {
 		height: 515px;
