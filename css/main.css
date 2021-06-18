@@ -548,6 +548,11 @@ option:last-child {
     width: 270px;
 }
 
+.menu-list img {
+	widows: 20px;
+	height: 20px;
+}
+
 .menu-list::-webkit-scrollbar-track {
 	background-color: #ffffff;
 	width: 5px;
@@ -625,7 +630,7 @@ option:last-child {
 	background-color: #ffffff;
 	
 	position: absolute;
-	bottom: -632px;
+	bottom: -1632px;
 /*	top: 49px;*/
 }
 
