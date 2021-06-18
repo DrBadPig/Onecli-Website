@@ -1,6 +1,8 @@
 @charset "utf-8";
 /* CSS Document */
 
+/*SHARES BLOCK*/
+
 .shares-info {
     width: 100%;
     flex-wrap: wrap;
@@ -184,11 +186,9 @@
 
 @media screen and (max-width: 768px) {
 	/*	shares info section*/
-	.shares-info {
-		height: 400px;
-	}
 	.si-block {
 		width: 49%; 
+		margin: 0px 0px 10px 0px;
 	}
 	/*	stats*/
 	.stats-block h2 {
@@ -214,9 +214,6 @@
 
 @media screen and (max-width: 480px) {
 	/*	shares info section*/
-	.shares-info {
-		height: 800px;
-	}
 	.si-block {
 		width: 100%; 
 	}
