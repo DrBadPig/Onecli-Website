@@ -1101,6 +1101,9 @@ option:last-child {
 	.main-navigation {
 		top: 53px;
 	}
+	.menu-list {
+		top: 102px;
+	}
 /*	MIAN CONTENT*/
 	.main-content {
 		top: 53px;
