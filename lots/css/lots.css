@@ -957,6 +957,18 @@
 	border-radius: 0px;
 }
 
+/*MODAL WITHDRAW*/
+
+.sum-onx, .sum-dol {
+	position: absolute;
+	top: -15px;
+	color: #34C38D;
+}
+
+.sum-dol {
+	left: 256px;
+}
+
 /*MEDIA*/
 
 @media screen and (min-width: 1366px) {
@@ -1177,6 +1189,13 @@
 	}
 	.pager .pages .second {
 		display: flex;
+	}
+	/*MODAL WITHDRAW*/
+	.sum-onx, .sum-dol {
+	}
+
+	.sum-dol {
+		left: 52%;
 	}
 }
 
@@ -1510,5 +1529,14 @@
 		left: 10px;
 		bottom: 6px;
 		font-size: 14px;
+	}
+	/*MODAL WITHDRAW*/
+	.sum-onx, .sum-dol {
+		right: 0px;
+    	top: 9px;
+	}
+	.sum-dol {
+		left: auto;
+    	top: 54px;
 	}
 }

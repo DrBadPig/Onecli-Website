@@ -135,7 +135,7 @@
 	</nav>
 	
 	<!--MODALS-->
-	<div style="display: none;" class="modals">
+	<div style="display: ;" class="modals">
 		<!--SEND SUCCESS MODAL-->
 		<div style="display: none;" class="send-success-modal">
 			<div class="modal-full-wrapper">
@@ -357,7 +357,7 @@
 		</div>
 		
 		<!--WITHDRAW MODAL-->
-		<div style="display: none;" class="withdraw-modal">
+		<div style="display: " class="withdraw-modal">
 			<div class="modal-full-wrapper">
 				<div class="modal-close-button">
 					<svg xmlns="http://www.w3.org/2000/svg" width="14.798" height="14.798" viewBox="0 0 14.798 14.798">
@@ -390,25 +390,12 @@
 						<div class="payment-text">WalletOne</div>
 					</div>
 				</div>
-				<div class="choose-payment">
-					<span class="t-bold-300">Выберите платежную систему:</span>
-					<div>
-						<select size="1">
-							<option value="1">Visa/MasterCard</option>
-							<option value="2">Visa/MasterCard</option>
-							<option value="3">Visa/MasterCard</option>
-						</select>
-						<label class="switch">
-  							<input type="checkbox">
-  							<span class="slider round"></span>
-						</label>
-						<span class="t-black t-bold-300">Запомнить выбор</span>
-					</div>
-				</div>
 				<div class="sum">
-					<div>
-						<input type="text" placeholder="Сумма RTX">
-						<input type="text" placeholder="Сумма $">
+					<div style="position: relative;">
+						<span class="sum-onx">Сумма ONX</span>
+						<input type="text">
+						<span class="sum-dol">Сумма $</span>
+						<input type="text">
 					</div>
 					<button class="btn">Вывести</button>
 				</div>
